@@ -4,5 +4,32 @@ Introduction/Objective:
 
 Coding Process:
 
+Ant_Lymph
+
+210130 The Antigen class organizes the properties and functionalities of a chosen antigen from the Immune Epitope
+Database (IEDB). The Lymphocyte class has similar qualities, but the paratope is a randomly generated aa sequence of
+the same length as the epitope.
+
+Experimental properties include epitope, pop, and n for both the Antigen and Epitope classes. Each variable will be
+parameterized while the others remain constant to identify patterns and significance of the variable’s dominance over
+the system.
+
+
+Main
+
+210130
+The Main class is an environment where all classes interact and perform their functionalities with one another.
+The function 'binding' simulates the initial binding of the antigen and lymphocyte where the probability of binding is
+calculated by the percent match of the amino acid binding sites.
+
+210203
+The function utilizes a for loop to iterate through each index of the string "a" and match it to the same index
+of string "l". Each time both indices match, the "count" increases by 1. By dividing "count" by the length of "a", the
+percent match is calculated and is stored as "pr_bind".A while loop is then utilized to run a randomly chosen number
+from 0-1 and if that number is less than or equal to the probability of not binding, the counter "bind_time" increases
+by 1 and the boolean "bound" = FALSE. Once the random number is greater than than the probability of not binding, the
+"self.iteration_counts" dictionary is appended with the key "init_bind" and the value "bind_time". Print statements
+were used to test the accuracy of each component of the function.
+
 Testing:
 
