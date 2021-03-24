@@ -5,7 +5,6 @@ from Model.Ant_Lymph import ant1, lymph1
 class Main:
 
     def __init__(self):
-        self = self
         self.iteration_counts = dict()
 
     def binding(self, a, l):
