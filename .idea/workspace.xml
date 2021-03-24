@@ -38,7 +38,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Thesis_Notebook" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1qBI5oIH5inPO5sUlf0DLBPmWFx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -141,22 +141,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1616546566643" />
-    <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1616547939009">
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1616548337917">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1616547939009" />
-    <state width="1419" height="245" key="GridCell.Tab.0.center" timestamp="1616547939007">
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1616548337917" />
+    <state width="1419" height="245" key="GridCell.Tab.0.center" timestamp="1616548337916">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1616547939007" />
-    <state width="1419" height="245" key="GridCell.Tab.0.left" timestamp="1616547939006">
+    <state width="1419" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1616548337916" />
+    <state width="1419" height="245" key="GridCell.Tab.0.left" timestamp="1616548337915">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1616547939006" />
-    <state width="1419" height="245" key="GridCell.Tab.0.right" timestamp="1616547939008">
+    <state width="1419" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1616548337915" />
+    <state width="1419" height="245" key="GridCell.Tab.0.right" timestamp="1616548337917">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1616547939008" />
+    <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1616548337917" />
     <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616547713459">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
