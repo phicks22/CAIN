@@ -22,11 +22,11 @@ class Main:
 
         for l1, l2 in zip(a, l):
             if l1 == l2:
-                count += 1
+                count += 1  # amount of matching amino acids in zip(a, l)
+                if count == 0:
+                    return print("No probability of binding")
 
         pr_bind = count / len(a)
-
-        #         pr_bind = SequenceMatcher(None, a, l).ratio() #Maybe use for conformational epitopes?
 
         while random.random() <= (1 - pr_bind):
             bind_time += 1

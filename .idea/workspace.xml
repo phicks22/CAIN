@@ -24,9 +24,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d445426-7faa-4ae8-be1a-0c57e9dd020e" name="Default Changelist" comment="Initial commit">
+    <list default="true" id="6d445426-7faa-4ae8-be1a-0c57e9dd020e" name="Default Changelist" comment="Added previous entries to notes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notes" beforeDir="false" afterPath="$PROJECT_DIR$/Notes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/Main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616547637189</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added previous entries to notes">
+      <created>1616549730169</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1616549730169</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -139,29 +146,46 @@
     <MESSAGE value="Uploaded current progress from Jupyter Lab." />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Uploaded" />
-    <option name="LAST_COMMIT_MESSAGE" value="Uploaded" />
+    <MESSAGE value="Added previous entries to notes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added previous entries to notes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616546566643">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1616546566643" />
-    <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1616548572626">
+    <state width="1419" height="304" key="GridCell.Tab.0.bottom" timestamp="1616551060475">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1616548572626" />
-    <state width="1419" height="245" key="GridCell.Tab.0.center" timestamp="1616548572625">
+    <state width="1419" height="304" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1616551060475" />
+    <state width="1419" height="304" key="GridCell.Tab.0.center" timestamp="1616551060474">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1616548572625" />
-    <state width="1419" height="245" key="GridCell.Tab.0.left" timestamp="1616548572624">
+    <state width="1419" height="304" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1616551060474" />
+    <state width="1419" height="304" key="GridCell.Tab.0.left" timestamp="1616551060473">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1616548572624" />
-    <state width="1419" height="245" key="GridCell.Tab.0.right" timestamp="1616548572626">
+    <state width="1419" height="304" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1616551060473" />
+    <state width="1419" height="304" key="GridCell.Tab.0.right" timestamp="1616551060475">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1616548572626" />
+    <state width="1419" height="304" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1616551060475" />
+    <state width="1419" height="304" key="GridCell.Tab.1.bottom" timestamp="1616550997306">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1616550997306" />
+    <state width="1419" height="304" key="GridCell.Tab.1.center" timestamp="1616550997305">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1616550997305" />
+    <state width="1419" height="304" key="GridCell.Tab.1.left" timestamp="1616550997304">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1616550997304" />
+    <state width="1419" height="304" key="GridCell.Tab.1.right" timestamp="1616550997305">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1616550997305" />
     <state x="221" y="89" key="SettingsEditor" timestamp="1616548493861">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
