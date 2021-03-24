@@ -24,7 +24,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d445426-7faa-4ae8-be1a-0c57e9dd020e" name="Default Changelist" comment="Added return to binding function for when there's no probability of binding.">
+    <list default="true" id="6d445426-7faa-4ae8-be1a-0c57e9dd020e" name="Default Changelist" comment="Added comments to binding function.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616551601568</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added comments to binding function.">
+      <created>1616552176856</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1616552176856</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -155,45 +162,46 @@
     <MESSAGE value="Uploaded" />
     <MESSAGE value="Added previous entries to notes" />
     <MESSAGE value="Added return to binding function for when there's no probability of binding." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added return to binding function for when there's no probability of binding." />
+    <MESSAGE value="Added comments to binding function." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added comments to binding function." />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616546566643">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1616546566643" />
-    <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1616551562141">
+    <state width="1419" height="304" key="GridCell.Tab.0.bottom" timestamp="1616603517207">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1616551562141" />
-    <state width="1419" height="245" key="GridCell.Tab.0.center" timestamp="1616551562140">
+    <state width="1419" height="304" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1616603517207" />
+    <state width="1419" height="304" key="GridCell.Tab.0.center" timestamp="1616603517206">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1616551562140" />
-    <state width="1419" height="245" key="GridCell.Tab.0.left" timestamp="1616551562139">
+    <state width="1419" height="304" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1616603517206" />
+    <state width="1419" height="304" key="GridCell.Tab.0.left" timestamp="1616603517206">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1616551562139" />
-    <state width="1419" height="245" key="GridCell.Tab.0.right" timestamp="1616551562141">
+    <state width="1419" height="304" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1616603517206" />
+    <state width="1419" height="304" key="GridCell.Tab.0.right" timestamp="1616603517207">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1616551562141" />
-    <state width="1419" height="304" key="GridCell.Tab.1.bottom" timestamp="1616551456036">
+    <state width="1419" height="304" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1616603517207" />
+    <state width="1419" height="304" key="GridCell.Tab.1.bottom" timestamp="1616603517208">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1616551456036" />
-    <state width="1419" height="304" key="GridCell.Tab.1.center" timestamp="1616551456035">
+    <state width="1419" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1616603517208" />
+    <state width="1419" height="304" key="GridCell.Tab.1.center" timestamp="1616603517208">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1616551456035" />
-    <state width="1419" height="304" key="GridCell.Tab.1.left" timestamp="1616551456035">
+    <state width="1419" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1616603517208" />
+    <state width="1419" height="304" key="GridCell.Tab.1.left" timestamp="1616603517207">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1616551456035" />
-    <state width="1419" height="304" key="GridCell.Tab.1.right" timestamp="1616551456036">
+    <state width="1419" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1616603517207" />
+    <state width="1419" height="304" key="GridCell.Tab.1.right" timestamp="1616603517208">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1616551456036" />
+    <state width="1419" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1616603517208" />
     <state x="221" y="89" key="SettingsEditor" timestamp="1616548493861">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
