@@ -25,7 +25,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d445426-7faa-4ae8-be1a-0c57e9dd020e" name="Default Changelist" comment="Added comments to binding function.">
+      <change afterPath="$PROJECT_DIR$/Resources/PAM_250.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/PAM250_Matrix" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,10 +53,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunManager" selected="Python.Main">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.PAM_250">
     <configuration name="Ant_Lymph" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Thesis_Notebook" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -97,8 +105,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="PAM_250" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Thesis_Notebook" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3.8" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Resources" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Resources/PAM_250.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.Ant_Lymph" />
+      <item itemvalue="Python.PAM_250" />
       <item itemvalue="Python.Main" />
     </list>
   </component>
@@ -166,26 +196,30 @@
     <option name="LAST_COMMIT_MESSAGE" value="Added comments to binding function." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616546566643">
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616608348403">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1616546566643" />
-    <state width="1419" height="304" key="GridCell.Tab.0.bottom" timestamp="1616603517207">
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1616608348403" />
+    <state x="419" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616607993893">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1616603517207" />
-    <state width="1419" height="304" key="GridCell.Tab.0.center" timestamp="1616603517206">
+    <state x="419" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1616607993893" />
+    <state width="1419" height="127" key="GridCell.Tab.0.bottom" timestamp="1616608359967">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1616603517206" />
-    <state width="1419" height="304" key="GridCell.Tab.0.left" timestamp="1616603517206">
+    <state width="1419" height="127" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1616608359967" />
+    <state width="1419" height="127" key="GridCell.Tab.0.center" timestamp="1616608359966">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1616603517206" />
-    <state width="1419" height="304" key="GridCell.Tab.0.right" timestamp="1616603517207">
+    <state width="1419" height="127" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1616608359966" />
+    <state width="1419" height="127" key="GridCell.Tab.0.left" timestamp="1616608359965">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1616603517207" />
+    <state width="1419" height="127" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1616608359965" />
+    <state width="1419" height="127" key="GridCell.Tab.0.right" timestamp="1616608359966">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="127" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1616608359966" />
     <state width="1419" height="304" key="GridCell.Tab.1.bottom" timestamp="1616603517208">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -202,10 +236,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1419" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1616603517208" />
-    <state x="221" y="89" key="SettingsEditor" timestamp="1616548493861">
+    <state x="221" y="89" key="SettingsEditor" timestamp="1616608475795">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1616548493861" />
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1616608475795" />
     <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616547713459">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
