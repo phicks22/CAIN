@@ -9,9 +9,6 @@ class Antigen:
         self.n = n  # The number of individuals in the population
 
 
-ant1 = Antigen('ACDEFGHIK', 1, 1)  # Instance of object "Antigen()"
-
-
 class Lymphocyte:
 
     def __init__(self, paratope, pop, n):
@@ -35,8 +32,3 @@ class Lymphocyte:
 
         return self.paratope
 
-
-lymph1 = Lymphocyte('', 1, 1)  # Instance of object "Lymphocyte()"
-
-#print(ant1.epitope)
-#print(lymph1.gen_para(len(ant1.epitope)))

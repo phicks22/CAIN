@@ -1,6 +1,11 @@
 import random
-from Model.Ant_Lymph import ant1
-from Model.Ant_Lymph import lymph1
+from Model.Ant_Lymph import Antigen
+from Model.Ant_Lymph import Lymphocyte
+
+# Calling instances of both Ant_Lymph classes
+ant1 = Antigen('ACDEFGHIK', 1, 1)
+lymph1 = Lymphocyte('', 1, 1)
+lymph2 = lymph1.gen_para(len(ant1.epitope))
 
 
 class Main:
@@ -24,17 +29,17 @@ class Main:
         print(ant1.epitope)
         print(lymph1.paratope)
 
-        # for i, j in range(len(ant1.epitope)):
-        #     if a[i] == l[j]:
-        #         count += 1
-        #         if count == 0:
-        #             return print("No probability of binding.")
+        for i in a, l:
+            if a[i] == l[i]:
+                count += 1
+                if count == 0:
+                    return print("No probability of binding.")
 
-        #for l1, l2 in zip(a, l):
-         #   if l1 == l2:
-         #       count += 1  # amount of matching amino acids in zip(a, l)
-          #      if count == 0:
-           #         return print("No probability of binding")
+        # for l1, l2 in zip(a, l):
+        #   if l1 == l2:
+        #      count += 1  # amount of matching amino acids in zip(a, l)
+        # if count == 0:
+        # return print("No probability of binding")
 
         pr_bind = count / len(a)
 

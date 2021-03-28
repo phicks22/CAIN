@@ -36,5 +36,10 @@ too long. I realized that if there was a 0% binding chance, the loop would conti
 which was strange). I added a print statement as a return telling the user that there is no chance of the sequences
 to bind.
 
+210327
+I identified that the lymph1.paratope property is not functioning properly in the Main class binding function. The
+paratope property transfers to the Main file correctly, confirmed by a print statement, however it does not get
+recognized by the binding function even though ant1.epitope functions correctly.
+
 Testing:
 
