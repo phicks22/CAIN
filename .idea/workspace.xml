@@ -24,10 +24,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d445426-7faa-4ae8-be1a-0c57e9dd020e" name="Default Changelist" comment="Fixing class properties.">
+    <list default="true" id="6d445426-7faa-4ae8-be1a-0c57e9dd020e" name="Default Changelist" comment="Fixed paratope issue by calling the Ant_Lymph.py classes in Main.py">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Ant_Lymph.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Ant_Lymph.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notes" beforeDir="false" afterPath="$PROJECT_DIR$/Notes" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616892249112</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fixed paratope issue by calling the Ant_Lymph.py classes in Main.py">
+      <created>1616893525844</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1616893525844</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -201,7 +207,8 @@
     <MESSAGE value="Added return to binding function for when there's no probability of binding." />
     <MESSAGE value="Added comments to binding function." />
     <MESSAGE value="Fixing class properties." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing class properties." />
+    <MESSAGE value="Fixed paratope issue by calling the Ant_Lymph.py classes in Main.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed paratope issue by calling the Ant_Lymph.py classes in Main.py" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616608348403">
@@ -212,42 +219,42 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="419" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1616607993893" />
-    <state width="1419" height="127" key="GridCell.Tab.0.bottom" timestamp="1616893483982">
+    <state width="1419" height="127" key="GridCell.Tab.0.bottom" timestamp="1616894290192">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="127" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1616893483982" />
+    <state width="1419" height="127" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1616894290192" />
     <state width="1419" height="127" key="GridCell.Tab.0.bottom/0.23.1440.801@0.23.1440.801" timestamp="1616611912870" />
-    <state width="1419" height="127" key="GridCell.Tab.0.center" timestamp="1616893483981">
+    <state width="1419" height="127" key="GridCell.Tab.0.center" timestamp="1616894290190">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="127" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1616893483981" />
+    <state width="1419" height="127" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1616894290190" />
     <state width="1419" height="127" key="GridCell.Tab.0.center/0.23.1440.801@0.23.1440.801" timestamp="1616611912869" />
-    <state width="1419" height="127" key="GridCell.Tab.0.left" timestamp="1616893483980">
+    <state width="1419" height="127" key="GridCell.Tab.0.left" timestamp="1616894290190">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="127" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1616893483980" />
+    <state width="1419" height="127" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1616894290190" />
     <state width="1419" height="127" key="GridCell.Tab.0.left/0.23.1440.801@0.23.1440.801" timestamp="1616611912869" />
-    <state width="1419" height="127" key="GridCell.Tab.0.right" timestamp="1616893483982">
+    <state width="1419" height="127" key="GridCell.Tab.0.right" timestamp="1616894290191">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="127" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1616893483982" />
+    <state width="1419" height="127" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1616894290191" />
     <state width="1419" height="127" key="GridCell.Tab.0.right/0.23.1440.801@0.23.1440.801" timestamp="1616611912870" />
-    <state width="1419" height="304" key="GridCell.Tab.1.bottom" timestamp="1616891942191">
+    <state width="1419" height="304" key="GridCell.Tab.1.bottom" timestamp="1616894250844">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1616891942191" />
-    <state width="1419" height="304" key="GridCell.Tab.1.center" timestamp="1616891942190">
+    <state width="1419" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1616894250844" />
+    <state width="1419" height="304" key="GridCell.Tab.1.center" timestamp="1616894250843">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1616891942190" />
-    <state width="1419" height="304" key="GridCell.Tab.1.left" timestamp="1616891942190">
+    <state width="1419" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1616894250843" />
+    <state width="1419" height="304" key="GridCell.Tab.1.left" timestamp="1616894250843">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1616891942190" />
-    <state width="1419" height="304" key="GridCell.Tab.1.right" timestamp="1616891942191">
+    <state width="1419" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1616894250843" />
+    <state width="1419" height="304" key="GridCell.Tab.1.right" timestamp="1616894250843">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1616891942191" />
+    <state width="1419" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1616894250843" />
     <state x="221" y="89" key="SettingsEditor" timestamp="1616608475795">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
