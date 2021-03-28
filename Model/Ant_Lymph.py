@@ -5,18 +5,18 @@ class Antigen:
 
     def __init__(self, epitope, pop, n):
         self.epitope = epitope  # Stores the aa sequence of the epitope
-        self.pop = dict()  # Dictionary that stores each antigen in the population
+        self.pop = pop  # Dictionary that stores each antigen in the population
         self.n = n  # The number of individuals in the population
 
 
 ant1 = Antigen('ACDEFGHIK', 1, 1)  # Instance of object "Antigen()"
 
 
-class Lymphocyte():
+class Lymphocyte:
 
     def __init__(self, paratope, pop, n):
-        self.paratope = ''
-        self.pop = dict()
+        self.paratope = paratope
+        self.pop = pop
         self.n = n
 
     def gen_para(self, len_epitope):
@@ -38,4 +38,5 @@ class Lymphocyte():
 
 lymph1 = Lymphocyte('', 1, 1)  # Instance of object "Lymphocyte()"
 
-print(lymph1.gen_para(len(ant1.epitope)))
+#print(ant1.epitope)
+#print(lymph1.gen_para(len(ant1.epitope)))

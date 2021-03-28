@@ -6,11 +6,10 @@ Coding Process:
 
 Ant_Lymph
 
-210130 The Antigen class organizes the properties and functionalities of a chosen antigen from the Immune Epitope
+210130
+The Antigen class organizes the properties and functionalities of a chosen antigen from the Immune Epitope
 Database (IEDB). The Lymphocyte class has similar qualities, but the paratope is a randomly generated aa sequence of
-the same length as the epitope.
-
-Experimental properties include epitope, pop, and n for both the Antigen and Epitope classes. Each variable will be
+the same length as the epitope.Experimental properties include epitope, pop, and n for both the Antigen and Epitope classes. Each variable will be
 parameterized while the others remain constant to identify patterns and significance of the variable’s dominance over
 the system.
 
@@ -30,6 +29,12 @@ from 0-1 and if that number is less than or equal to the probability of not bind
 by 1 and the boolean "bound" = FALSE. Once the random number is greater than than the probability of not binding, the
 "self.iteration_counts" dictionary is appended with the key "init_bind" and the value "bind_time". Print statements
 were used to test the accuracy of each component of the function.
+
+210323
+Once I transferred the code into the PyCharm environment, I noticed that the binding function would continually run for
+too long. I realized that if there was a 0% binding chance, the loop would continuously run (but not in Jupyter Lab
+which was strange). I added a print statement as a return telling the user that there is no chance of the sequences
+to bind.
 
 Testing:
 
