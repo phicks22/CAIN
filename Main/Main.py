@@ -25,7 +25,7 @@ class Main:
         bind_time = 0
         count = 0
 
-        count = len(list(filter(lambda xy: xy[0] == xy[1], zip(a, l))))  # Identifies the index-specific percent match
+        count = len(list(filter(lambda xy: xy[0] == xy[1], zip(a, l))))  # Identifies the index-specific match integer
 
         pr_bind = count / len(a)  # calculates the probability of binding
 
