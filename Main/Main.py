@@ -26,26 +26,12 @@ class Main:
         bind_time = 0
         count = 0
 
-        print(ant1.epitope)
-        print(lymph1.paratope)
+        count = len(list(filter(lambda xy: xy[0] == xy[1], zip(a, l))))  # Identifies the index-specific percent match
 
-        #for i in a, l:
-         #   if a[i] == l[i]:
-          #      count += 1
-           #     if count == 0:
-            #        return print("No probability of binding.")
+        pr_bind = count / len(a)  # calculates the probability of binding
 
-        #for l1, l2 in zip(a, l):
-         ##      count += 1  # amount of matching amino acids in zip(a, l)
-           ##        return print("No probability of binding")
-
-        count = len(list(filter(lambda xy: xy[0] == xy[1], zip(a, l))))
-
-
-        pr_bind = count / len(a)
-
-        while random.random() <= (1 - pr_bind):
-            if count == 0:
+        while random.random() <= (1 - pr_bind):  # Simulates the binding process of the antigen and lymphocyte
+            if count == 0:  # If there's no probability of binding
                 break
             bind_time += 1
         self.iteration_counts['init_bind'] = bind_time

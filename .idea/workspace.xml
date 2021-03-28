@@ -24,9 +24,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d445426-7faa-4ae8-be1a-0c57e9dd020e" name="Default Changelist" comment="Fixed paratope issue by calling the Ant_Lymph.py classes in Main.py">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6d445426-7faa-4ae8-be1a-0c57e9dd020e" name="Default Changelist" comment="Fixed paratope issue by adding a break statement within the while loop if count==0.">
       <change beforePath="$PROJECT_DIR$/Main/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notes" beforeDir="false" afterPath="$PROJECT_DIR$/Notes" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616893525844</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fixed paratope issue by adding a break statement within the while loop if count==0.">
+      <created>1616894326901</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1616894326901</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,7 +215,8 @@
     <MESSAGE value="Added comments to binding function." />
     <MESSAGE value="Fixing class properties." />
     <MESSAGE value="Fixed paratope issue by calling the Ant_Lymph.py classes in Main.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed paratope issue by calling the Ant_Lymph.py classes in Main.py" />
+    <MESSAGE value="Fixed paratope issue by adding a break statement within the while loop if count==0." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed paratope issue by adding a break statement within the while loop if count==0." />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616608348403">

@@ -9,9 +9,9 @@ Ant_Lymph
 210130
 The Antigen class organizes the properties and functionalities of a chosen antigen from the Immune Epitope
 Database (IEDB). The Lymphocyte class has similar qualities, but the paratope is a randomly generated aa sequence of
-the same length as the epitope.Experimental properties include epitope, pop, and n for both the Antigen and Epitope classes. Each variable will be
-parameterized while the others remain constant to identify patterns and significance of the variable’s dominance over
-the system.
+the same length as the epitope.Experimental properties include epitope, pop, and n for both the Antigen and Epitope
+classes. Each variable will be parameterized while the others remain constant to identify patterns and significance of
+the variable’s dominance over the system.
 
 
 Main
@@ -39,7 +39,11 @@ to bind.
 210327
 I identified that the lymph1.paratope property is not functioning properly in the Main class binding function. The
 paratope property transfers to the Main file correctly, confirmed by a print statement, however it does not get
-recognized by the binding function even though ant1.epitope functions correctly.
+recognized by the binding function even though ant1.epitope functions correctly. To fix this, I called instances of the
+Antigen and Lymphocyte classes in the Main file and both properties epitope and paratope ran properly, confirmed by
+print statements. The next issue I encountered was the infinite while loop if there was no probability of binding
+between the two strings. To rectify this I added a break statement directly after the beginning of the while loop so
+that if count == 0, the loop will not run and the Init_binding_time = 0.
 
 Testing:
 
