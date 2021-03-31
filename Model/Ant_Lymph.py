@@ -42,7 +42,7 @@ class TestCases(unittest.TestCase):
 
         Args: paratope, epitope
 
-        Returns: Bool
+        Returns: string
         """
         len_a = len(paratope)
         len_l = len(epitope)
