@@ -24,8 +24,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d445426-7faa-4ae8-be1a-0c57e9dd020e" name="Default Changelist" comment="Updated comments.">
+    <list default="true" id="6d445426-7faa-4ae8-be1a-0c57e9dd020e" name="Default Changelist" comment="Reformatted Notes file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Ant_Lymph.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Ant_Lymph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notes" beforeDir="false" afterPath="$PROJECT_DIR$/Notes" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +62,7 @@
       <recent name="$PROJECT_DIR$/Resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Main">
+  <component name="RunManager" selected="Python.Ant_Lymph">
     <configuration name="Ant_Lymph" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Thesis_Notebook" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -211,7 +213,21 @@
       <option name="project" value="LOCAL" />
       <updated>1616895032313</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Reformatted Notes file">
+      <created>1617201219371</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1617201219371</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Reformatted Notes file">
+      <created>1617201238136</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1617201238136</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -239,7 +255,8 @@
     <MESSAGE value="Added to my lab notes." />
     <MESSAGE value="Simplified the import statements." />
     <MESSAGE value="Updated comments." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated comments." />
+    <MESSAGE value="Reformatted Notes file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reformatted Notes file" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616608348403">
@@ -250,25 +267,25 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="419" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1616607993893" />
-    <state width="1419" height="127" key="GridCell.Tab.0.bottom" timestamp="1617048208987">
+    <state width="1419" height="127" key="GridCell.Tab.0.bottom" timestamp="1617203825147">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="127" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1617048208987" />
+    <state width="1419" height="127" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1617203825147" />
     <state width="1419" height="127" key="GridCell.Tab.0.bottom/0.23.1440.801@0.23.1440.801" timestamp="1616611912870" />
-    <state width="1419" height="127" key="GridCell.Tab.0.center" timestamp="1617048208987">
+    <state width="1419" height="127" key="GridCell.Tab.0.center" timestamp="1617203825146">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="127" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1617048208987" />
+    <state width="1419" height="127" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1617203825146" />
     <state width="1419" height="127" key="GridCell.Tab.0.center/0.23.1440.801@0.23.1440.801" timestamp="1616611912869" />
-    <state width="1419" height="127" key="GridCell.Tab.0.left" timestamp="1617048208986">
+    <state width="1419" height="127" key="GridCell.Tab.0.left" timestamp="1617203825145">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="127" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1617048208986" />
+    <state width="1419" height="127" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1617203825145" />
     <state width="1419" height="127" key="GridCell.Tab.0.left/0.23.1440.801@0.23.1440.801" timestamp="1616611912869" />
-    <state width="1419" height="127" key="GridCell.Tab.0.right" timestamp="1617048208987">
+    <state width="1419" height="127" key="GridCell.Tab.0.right" timestamp="1617203825147">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="127" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1617048208987" />
+    <state width="1419" height="127" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1617203825147" />
     <state width="1419" height="127" key="GridCell.Tab.0.right/0.23.1440.801@0.23.1440.801" timestamp="1616611912870" />
     <state width="1419" height="304" key="GridCell.Tab.1.bottom" timestamp="1617048208979">
       <screen x="0" y="0" width="1440" height="900" />

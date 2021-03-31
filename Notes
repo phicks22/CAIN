@@ -46,3 +46,11 @@ Coding Process:
 
 Testing:
 
+    Ant_Lymph
+
+        210331
+        Print statements were initially used to check that the lengths of the epitope and the paratope were equal. Today
+        I created a function that
+
+    Main
+

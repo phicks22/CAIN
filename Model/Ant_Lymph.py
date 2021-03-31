@@ -1,4 +1,5 @@
 import random
+import unittest
 
 
 class Antigen:
@@ -32,3 +33,29 @@ class Lymphocyte:
 
         return self.paratope
 
+
+class TestCases(unittest.TestCase):
+
+    def len_epitope_equals_len_paratope(self, paratope, epitope):
+        """
+        Tests if the length of the epitope is equal to the length of the paratope
+
+        Args: paratope, epitope
+
+        Returns: Bool
+        """
+        len_a = len(paratope)
+        len_l = len(epitope)
+        self.assertEqual(len_a, len_l, msg="len(a) != len(b)")
+
+        if len_a == len_l:
+            print("All good")
+
+
+ant_test = Antigen('ACDEFGHIKLM', 1, 1)
+lymph_test = Lymphocyte('', 1, 1)
+
+lymph_test.gen_para(len(ant_test.epitope))
+
+test = TestCases()
+test.len_epitope_equals_len_paratope(lymph_test.paratope, ant_test.epitope)
