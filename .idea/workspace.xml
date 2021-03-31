@@ -24,9 +24,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d445426-7faa-4ae8-be1a-0c57e9dd020e" name="Default Changelist" comment="Reformatted Notes file">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Ant_Lymph.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Ant_Lymph.py" afterDir="false" />
+    <list default="true" id="6d445426-7faa-4ae8-be1a-0c57e9dd020e" name="Default Changelist" comment="Added testing notes in Notes file.">
       <change beforePath="$PROJECT_DIR$/Notes" beforeDir="false" afterPath="$PROJECT_DIR$/Notes" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -227,7 +225,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617201238136</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Created a test function for ant/lymph object epitope/paratope lengths.">
+      <created>1617203943681</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1617203943681</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added testing notes in Notes file.">
+      <created>1617204089295</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1617204089295</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -256,7 +268,9 @@
     <MESSAGE value="Simplified the import statements." />
     <MESSAGE value="Updated comments." />
     <MESSAGE value="Reformatted Notes file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reformatted Notes file" />
+    <MESSAGE value="Created a test function for ant/lymph object epitope/paratope lengths." />
+    <MESSAGE value="Added testing notes in Notes file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added testing notes in Notes file." />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616608348403">
