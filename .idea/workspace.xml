@@ -24,9 +24,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d445426-7faa-4ae8-be1a-0c57e9dd020e" name="Default Changelist" comment="Fixed paratope issue by adding a break statement within the while loop if count==0.">
-      <change beforePath="$PROJECT_DIR$/Main/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notes" beforeDir="false" afterPath="$PROJECT_DIR$/Notes" afterDir="false" />
+    <list default="true" id="6d445426-7faa-4ae8-be1a-0c57e9dd020e" name="Default Changelist" comment="Updated comments.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,8 +126,8 @@
     </configuration>
     <list>
       <item itemvalue="Python.Ant_Lymph" />
-      <item itemvalue="Python.PAM_250" />
       <item itemvalue="Python.Main" />
+      <item itemvalue="Python.PAM_250" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -191,7 +190,28 @@
       <option name="project" value="LOCAL" />
       <updated>1616894326901</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added to my lab notes.">
+      <created>1616894787303</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1616894787303</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Simplified the import statements.">
+      <created>1616894860891</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1616894860891</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Updated comments.">
+      <created>1616895032313</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1616895032313</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -216,7 +236,10 @@
     <MESSAGE value="Fixing class properties." />
     <MESSAGE value="Fixed paratope issue by calling the Ant_Lymph.py classes in Main.py" />
     <MESSAGE value="Fixed paratope issue by adding a break statement within the while loop if count==0." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed paratope issue by adding a break statement within the while loop if count==0." />
+    <MESSAGE value="Added to my lab notes." />
+    <MESSAGE value="Simplified the import statements." />
+    <MESSAGE value="Updated comments." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated comments." />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616608348403">
@@ -227,42 +250,42 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="419" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1616607993893" />
-    <state width="1419" height="127" key="GridCell.Tab.0.bottom" timestamp="1616894290192">
+    <state width="1419" height="127" key="GridCell.Tab.0.bottom" timestamp="1617048208987">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="127" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1616894290192" />
+    <state width="1419" height="127" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1617048208987" />
     <state width="1419" height="127" key="GridCell.Tab.0.bottom/0.23.1440.801@0.23.1440.801" timestamp="1616611912870" />
-    <state width="1419" height="127" key="GridCell.Tab.0.center" timestamp="1616894290190">
+    <state width="1419" height="127" key="GridCell.Tab.0.center" timestamp="1617048208987">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="127" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1616894290190" />
+    <state width="1419" height="127" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1617048208987" />
     <state width="1419" height="127" key="GridCell.Tab.0.center/0.23.1440.801@0.23.1440.801" timestamp="1616611912869" />
-    <state width="1419" height="127" key="GridCell.Tab.0.left" timestamp="1616894290190">
+    <state width="1419" height="127" key="GridCell.Tab.0.left" timestamp="1617048208986">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="127" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1616894290190" />
+    <state width="1419" height="127" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1617048208986" />
     <state width="1419" height="127" key="GridCell.Tab.0.left/0.23.1440.801@0.23.1440.801" timestamp="1616611912869" />
-    <state width="1419" height="127" key="GridCell.Tab.0.right" timestamp="1616894290191">
+    <state width="1419" height="127" key="GridCell.Tab.0.right" timestamp="1617048208987">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="127" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1616894290191" />
+    <state width="1419" height="127" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1617048208987" />
     <state width="1419" height="127" key="GridCell.Tab.0.right/0.23.1440.801@0.23.1440.801" timestamp="1616611912870" />
-    <state width="1419" height="304" key="GridCell.Tab.1.bottom" timestamp="1616894250844">
+    <state width="1419" height="304" key="GridCell.Tab.1.bottom" timestamp="1617048208979">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1616894250844" />
-    <state width="1419" height="304" key="GridCell.Tab.1.center" timestamp="1616894250843">
+    <state width="1419" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1617048208979" />
+    <state width="1419" height="304" key="GridCell.Tab.1.center" timestamp="1617048208978">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1616894250843" />
-    <state width="1419" height="304" key="GridCell.Tab.1.left" timestamp="1616894250843">
+    <state width="1419" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1617048208978" />
+    <state width="1419" height="304" key="GridCell.Tab.1.left" timestamp="1617048208978">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1616894250843" />
-    <state width="1419" height="304" key="GridCell.Tab.1.right" timestamp="1616894250843">
+    <state width="1419" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1617048208978" />
+    <state width="1419" height="304" key="GridCell.Tab.1.right" timestamp="1617048208979">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1616894250843" />
+    <state width="1419" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1617048208979" />
     <state x="221" y="89" key="SettingsEditor" timestamp="1616608475795">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
