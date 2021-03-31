@@ -46,7 +46,7 @@ class TestCases(unittest.TestCase):
         """
         len_a = len(paratope)
         len_l = len(epitope)
-        self.assertEqual(len_a, len_l, msg="len(a) != len(b)")
+        self.assertEqual(len_a, len_l, msg="len(a) != len(l)")
 
         if len_a == len_l:
             print("All good")

@@ -50,7 +50,9 @@ Testing:
 
         210331
         Print statements were initially used to check that the lengths of the epitope and the paratope were equal. Today
-        I created a function that
+        I created a function that tests that instead of me counting each index. This utilizes the unittest package
+        and the self.assertEqual function. If the lengths of both properties are not equal then it will return the
+        message "len(a) != len(l)."
 
     Main
 
