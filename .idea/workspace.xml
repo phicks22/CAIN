@@ -126,8 +126,8 @@
     </configuration>
     <list>
       <item itemvalue="Python.Ant_Lymph" />
-      <item itemvalue="Python.Main" />
       <item itemvalue="Python.PAM_250" />
+      <item itemvalue="Python.Main" />
     </list>
   </component>
   <component name="SvnConfiguration">
