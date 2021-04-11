@@ -8,6 +8,7 @@ class Antigen:
         self.epitope = epitope  # Stores the aa sequence of the epitope
         self.pop = pop  # Dictionary that stores each antigen in the population
         self.n = n  # The number of individuals in the population
+        self.divide_a = 1  # The division rate of the antigen
 
 
 class Lymphocyte:
@@ -16,6 +17,9 @@ class Lymphocyte:
         self.paratope = paratope
         self.pop = pop
         self.n = n
+        self.divide_l = 1
+
+#TODO figure out cell division rates
 
     def gen_para(self, len_epitope):
         """

@@ -24,8 +24,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d445426-7faa-4ae8-be1a-0c57e9dd020e" name="Default Changelist" comment="Added testing notes in Notes file.">
-      <change beforePath="$PROJECT_DIR$/Notes" beforeDir="false" afterPath="$PROJECT_DIR$/Notes" afterDir="false" />
+    <list default="true" id="6d445426-7faa-4ae8-be1a-0c57e9dd020e" name="Default Changelist" comment="Updated Notes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Bcell_Selection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Bcell_Selection.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +61,7 @@
       <recent name="$PROJECT_DIR$/Resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Ant_Lymph">
+  <component name="RunManager" selected="Python.Bcell_Selection">
     <configuration name="Ant_Lymph" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Thesis_Notebook" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -74,6 +75,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Model/Ant_Lymph.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Bcell_Selection" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Thesis_Notebook" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3.8" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Model" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Model/Bcell_Selection.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -126,6 +148,7 @@
     </configuration>
     <list>
       <item itemvalue="Python.Ant_Lymph" />
+      <item itemvalue="Python.Bcell_Selection" />
       <item itemvalue="Python.PAM_250" />
       <item itemvalue="Python.Main" />
     </list>
@@ -239,7 +262,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617204089295</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Updated Notes">
+      <created>1617204247975</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1617204247975</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Updated Notes">
+      <created>1617204382337</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1617204382337</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -270,36 +307,37 @@
     <MESSAGE value="Reformatted Notes file" />
     <MESSAGE value="Created a test function for ant/lymph object epitope/paratope lengths." />
     <MESSAGE value="Added testing notes in Notes file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added testing notes in Notes file." />
+    <MESSAGE value="Updated Notes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Notes" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616608348403">
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618183319358">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1616608348403" />
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1618183319358" />
     <state x="419" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616607993893">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="419" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1616607993893" />
-    <state width="1419" height="127" key="GridCell.Tab.0.bottom" timestamp="1617203825147">
+    <state width="1419" height="127" key="GridCell.Tab.0.bottom" timestamp="1617204667552">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="127" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1617203825147" />
+    <state width="1419" height="127" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1617204667552" />
     <state width="1419" height="127" key="GridCell.Tab.0.bottom/0.23.1440.801@0.23.1440.801" timestamp="1616611912870" />
-    <state width="1419" height="127" key="GridCell.Tab.0.center" timestamp="1617203825146">
+    <state width="1419" height="127" key="GridCell.Tab.0.center" timestamp="1617204667551">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="127" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1617203825146" />
+    <state width="1419" height="127" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1617204667551" />
     <state width="1419" height="127" key="GridCell.Tab.0.center/0.23.1440.801@0.23.1440.801" timestamp="1616611912869" />
-    <state width="1419" height="127" key="GridCell.Tab.0.left" timestamp="1617203825145">
+    <state width="1419" height="127" key="GridCell.Tab.0.left" timestamp="1617204667551">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="127" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1617203825145" />
+    <state width="1419" height="127" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1617204667551" />
     <state width="1419" height="127" key="GridCell.Tab.0.left/0.23.1440.801@0.23.1440.801" timestamp="1616611912869" />
-    <state width="1419" height="127" key="GridCell.Tab.0.right" timestamp="1617203825147">
+    <state width="1419" height="127" key="GridCell.Tab.0.right" timestamp="1617204667552">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="127" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1617203825147" />
+    <state width="1419" height="127" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1617204667552" />
     <state width="1419" height="127" key="GridCell.Tab.0.right/0.23.1440.801@0.23.1440.801" timestamp="1616611912870" />
     <state width="1419" height="304" key="GridCell.Tab.1.bottom" timestamp="1617048208979">
       <screen x="0" y="0" width="1440" height="900" />
