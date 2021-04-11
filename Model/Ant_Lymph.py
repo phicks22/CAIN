@@ -19,7 +19,7 @@ class Lymphocyte:
         self.n = n
         self.divide_l = 1
 
-#TODO figure out cell division rates
+    # TODO figure out cell division rates
 
     def gen_para(self, len_epitope):
         """
