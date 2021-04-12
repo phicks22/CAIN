@@ -59,7 +59,7 @@ class TestCases(unittest.TestCase):
 ant_test = Antigen('ACDEFGHIKLM', 1, 1)
 lymph_test = Lymphocyte('', 1, 1)
 
-lymph_test.gen_para(len(ant_test.epitope))
+lymph_test = lymph_test.gen_para(len(ant_test.epitope))
 
 test = TestCases()
 test.len_epitope_equals_len_paratope(lymph_test.paratope, ant_test.epitope)

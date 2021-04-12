@@ -1,10 +1,10 @@
 import random
-from Model.Ant_Lymph import Antigen, Lymphocyte
+from Model.Ant_Lymph import Antigen, lymph_test
 
 # Calling instances of both Ant_Lymph classes
-ant1 = Antigen('ACDEFGHIKLM', 1, 1)
-lymph1 = Lymphocyte('', 1, 1)
-lymph2 = lymph1.gen_para(len(ant1.epitope))
+#ant1 = Antigen('ACDEFGHIKLM', 1, 1)
+#lymph1 = Lymphocyte('', 1, 1)
+#lymph2 = lymph1.gen_para(len(ant1.epitope))
 
 
 class Main:
@@ -23,19 +23,31 @@ class Main:
 
         """
         bind_time = 0
-        count = 0
+        match_number = 0
 
-        count = len(list(filter(lambda xy: xy[0] == xy[1], zip(a, l))))  # Identifies the index-specific match integer
+        match_number = len(list(filter(lambda xy: xy[0] == xy[1], zip(a, l))))  # Identifies the index-specific match
+        # integer
 
-        pr_bind = count / len(a)  # calculates the probability of binding
+        pr_bind = match_number / len(a)  # calculates the probability of binding
 
         while random.random() <= (1 - pr_bind):  # Simulates the binding process of the antigen and lymphocyte
-            if count == 0:  # If there's no probability of binding
+            if match_number == 0:  # If there's no probability of binding
                 break
             bind_time += 1
         self.iteration_counts['init_bind'] = bind_time
 
         return self.iteration_counts  # Holds the time it takes for antigen/lymphocyte binding
+
+    def immune_response(self):
+        """
+        Simulates immune response games between the antigen and lymphocyte populations
+
+
+        :return:
+        """
+        response_time = 0
+
+        for pop in lymph_test.result_pop
 
 
 example = Main()
