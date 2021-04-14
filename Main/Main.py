@@ -38,16 +38,18 @@ class Main:
 
         return self.iteration_counts  # Holds the time it takes for antigen/lymphocyte binding
 
+
     def immune_response(self):
         """
-        Simulates immune response games between the antigen and lymphocyte populations
+        Simulates immune response games between the antigen and lymphocyte populations.
 
 
         :return:
         """
         response_time = 0
 
-        for pop in lymph_test.result_pop
+        for pop in lymph_test.result_pop:
+
 
 
 example = Main()
