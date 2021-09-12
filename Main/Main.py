@@ -1,5 +1,5 @@
 import random
-from Model.Ant_Lymph import Antigen, lymph_test
+from Model.Ant_Lymph import ant_test, lymph_test
 
 # Calling instances of both Ant_Lymph classes
 #ant1 = Antigen('ACDEFGHIKLM', 1, 1)
@@ -48,10 +48,10 @@ class Main:
         """
         response_time = 0
 
-        for pop in lymph_test.result_pop:
+        #for pop in lymph_test.result_pop:
 
 
 
 example = Main()
 
-print(example.binding(ant1.epitope, lymph1.paratope))
+print(example.binding(ant_test.epitope, lymph_test.paratope))

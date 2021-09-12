@@ -50,7 +50,8 @@ Coding Process:
         200411
         I made the choice to set the default exchange factor at 10, but this will be manipulated in the future. Another
         assumption that is made that each individual in the initial lyphocyte population will begin with exact copies
-        of the paratope. Populations will be represented by a single individual for simplicity. The number of
+        of the paratope. Populations will be represented by a single individual for simplicity. Since each population is
+        being compared and not individuals, the individuals themselves do not need to be represented. The number of
         individuals in each Antigen/Lymphocyte population will be user set and will be used in the Immune_Response
         functions.
 

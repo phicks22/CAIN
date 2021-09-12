@@ -38,6 +38,13 @@ class Lymphocyte:
         return self.paratope
 
 
+ant_test = Antigen('ACDEFGHIKLM', 1, 1)
+lymph_test = Lymphocyte('', 1, 1)
+
+lymph_test_gen_para = lymph_test.gen_para(len(ant_test.epitope))
+print(lymph_test.paratope)
+
+
 class TestCases(unittest.TestCase):
 
     def len_epitope_equals_len_paratope(self, paratope, epitope):
@@ -54,12 +61,6 @@ class TestCases(unittest.TestCase):
 
         if len_a == len_l:
             print("All good")
-
-
-ant_test = Antigen('ACDEFGHIKLM', 1, 1)
-lymph_test = Lymphocyte('', 1, 1)
-
-lymph_test = lymph_test.gen_para(len(ant_test.epitope))
 
 test = TestCases()
 test.len_epitope_equals_len_paratope(lymph_test.paratope, ant_test.epitope)

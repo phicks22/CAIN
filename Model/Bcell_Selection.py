@@ -14,4 +14,5 @@ class Selection:
             self.selection_dict[i] = lymph_test.paratope  # Creates a dictionary with each population as keys and the
             # paratopes as values
 
-        # for pop in self.selection_dict:
+        for pop in self.selection_dict:
+
