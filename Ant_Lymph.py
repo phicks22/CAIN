@@ -1,14 +1,20 @@
+import os
 import random
+import sys
 import unittest
+sys.path.append(os.path.abspath(os.path.join('', 'Arg_Parser')))
+from Arg_Parser import *
+args = ant_lymph_parser().parse_args(sys.argv[1:])
 
 
 class Antigen:
 
-    def __init__(self, epitope, pop, n):
+    def __init__(self, epitope, n, division_rate, pop_num):
         self.epitope = epitope  # Stores the aa sequence of the epitope
-        self.pop = pop  # Dictionary that stores each antigen in the population
+        self.pop_num = pop_num
+        self.pop = dict()  # Dictionary that stores each antigen in the population
         self.n = n  # The number of individuals in the population
-        self.divide_a = 1  # The division rate of the antigen
+        self.divide_a = division_rate  # The division rate of the antigen
 
 
 class Lymphocyte:
@@ -38,11 +44,14 @@ class Lymphocyte:
         return self.paratope
 
 
-ant_test = Antigen('ACDEFGHIKLM', 1, 1)
-lymph_test = Lymphocyte('', 1, 1)
+if __name__ == '__main__':
 
-lymph_test_gen_para = lymph_test.gen_para(len(ant_test.epitope))
-print(lymph_test.paratope)
+    ant_test = Antigen(epitope=args.epitope, pop_num=args.pop_num, n=args.pop_size, division_rate=args.division_rate)
+    lymph_test = Lymphocyte('', 1, 1)
+    print(ant_test)
+
+    lymph_test_gen_para = lymph_test.gen_para(len(ant_test.epitope))
+    print(lymph_test.paratope)
 
 
 class TestCases(unittest.TestCase):
@@ -61,6 +70,3 @@ class TestCases(unittest.TestCase):
 
         if len_a == len_l:
             print("All good")
-
-test = TestCases()
-test.len_epitope_equals_len_paratope(lymph_test.paratope, ant_test.epitope)

@@ -47,13 +47,23 @@ Coding Process:
 
     Bcell_Selection
 
-        200411
+        210411
         I made the choice to set the default exchange factor at 10, but this will be manipulated in the future. Another
         assumption that is made that each individual in the initial lyphocyte population will begin with exact copies
         of the paratope. Populations will be represented by a single individual for simplicity. Since each population is
         being compared and not individuals, the individuals themselves do not need to be represented. The number of
         individuals in each Antigen/Lymphocyte population will be user set and will be used in the Immune_Response
         functions.
+
+    Arg_Parser
+
+        210912
+        I created a new file for argument parsing to set the parameters for the antigen and lymphocyte properties such as
+        population number, population size, antigen division rate, and antigen epitope. This will allow for a seamless
+        user experience when running the scripts. The argparser package was used for this implementation. I ran into an
+        issue where the Ant_lymph.py file would not call properties from Arg_Parser.py since it was outside of the Model
+        package directory. To resolve this I moved Ant_Lymph.py outside of the directory and will most likely do the
+        same with the others.
 
 Testing:
 

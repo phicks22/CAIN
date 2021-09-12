@@ -1,5 +1,5 @@
 import random
-from Model.Ant_Lymph import ant_test, lymph_test
+from Ant_Lymph import ant_test, lymph_test
 
 # Calling instances of both Ant_Lymph classes
 #ant1 = Antigen('ACDEFGHIKLM', 1, 1)

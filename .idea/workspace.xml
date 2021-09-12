@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -25,9 +28,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d445426-7faa-4ae8-be1a-0c57e9dd020e" name="Default Changelist" comment="updated Bcell_Selection.py">
+      <change afterPath="$PROJECT_DIR$/Arg_Parser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Ant_Lymph.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Ant_Lymph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Ant_Lymph.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ant_Lymph.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/Bcell_Selection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Bcell_Selection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Notes" beforeDir="false" afterPath="$PROJECT_DIR$/Notes" afterDir="false" />
     </list>
@@ -56,11 +60,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Arg_Parser" />
       <recent name="$PROJECT_DIR$/Resources" />
     </key>
   </component>
@@ -73,11 +80,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="/usr/local/bin/python3.8" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Model" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Model/Ant_Lymph.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ant_Lymph.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -149,13 +156,36 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in Ant_Lymph.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Thesis_Notebook" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Ant_Lymph.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.Ant_Lymph" />
       <item itemvalue="Python.Bcell_Selection" />
       <item itemvalue="Python.PAM_250" />
       <item itemvalue="Python.Main" />
+      <item itemvalue="Python tests.pytest in Ant_Lymph.py" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.pytest in Ant_Lymph.py" />
+      </list>
+    </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -321,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618423771538</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="updated Bcell_Selection.py">
+      <created>1631475166433</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1631475166433</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -358,59 +395,5 @@
     <MESSAGE value="Removed Immune_Response.py and added immune response function in Main.py" />
     <MESSAGE value="updated Bcell_Selection.py" />
     <option name="LAST_COMMIT_MESSAGE" value="updated Bcell_Selection.py" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618183319358">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1618183319358" />
-    <state x="419" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616607993893">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="419" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1616607993893" />
-    <state width="1419" height="304" key="GridCell.Tab.0.bottom" timestamp="1618952822610">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="304" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1618952822610" />
-    <state width="1419" height="127" key="GridCell.Tab.0.bottom/0.23.1440.801@0.23.1440.801" timestamp="1616611912870" />
-    <state width="1419" height="304" key="GridCell.Tab.0.center" timestamp="1618952822610">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="304" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1618952822610" />
-    <state width="1419" height="127" key="GridCell.Tab.0.center/0.23.1440.801@0.23.1440.801" timestamp="1616611912869" />
-    <state width="1419" height="304" key="GridCell.Tab.0.left" timestamp="1618952822609">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="304" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1618952822609" />
-    <state width="1419" height="127" key="GridCell.Tab.0.left/0.23.1440.801@0.23.1440.801" timestamp="1616611912869" />
-    <state width="1419" height="304" key="GridCell.Tab.0.right" timestamp="1618952822610">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="304" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1618952822610" />
-    <state width="1419" height="127" key="GridCell.Tab.0.right/0.23.1440.801@0.23.1440.801" timestamp="1616611912870" />
-    <state width="1419" height="304" key="GridCell.Tab.1.bottom" timestamp="1618952822612">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1618952822612" />
-    <state width="1419" height="304" key="GridCell.Tab.1.center" timestamp="1618952822611">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1618952822611" />
-    <state width="1419" height="304" key="GridCell.Tab.1.left" timestamp="1618952822611">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1618952822611" />
-    <state width="1419" height="304" key="GridCell.Tab.1.right" timestamp="1618952822612">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1419" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1618952822612" />
-    <state x="221" y="89" key="SettingsEditor" timestamp="1616608475795">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1616608475795" />
-    <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616547713459">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1616547713459" />
   </component>
 </project>
