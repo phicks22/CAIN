@@ -7,8 +7,7 @@ from Ant_Lymph import lymph_test
 matrix = np.loadtxt(os.path.join(Arg_Parser.root_dir, "Resources/PAM_250.txt"))
 matrix = np.array(matrix)
 
-
-col_names = ("A", "R", "N", "D", "C", "Q", "E", "G", "H", "I", "L", "K", "M", "F", "P", "S", "T", "W", "Y",   "V")
+col_names = ("A", "R", "N", "D", "C", "Q", "E", "G", "H", "I", "L", "K", "M", "F", "P", "S", "T", "W", "Y", "V")
 row_names = col_names
 pam = pd.DataFrame(matrix, columns=col_names, index=row_names)
 
@@ -23,18 +22,20 @@ class Selection:
     def clonal_selection(self, exchange_iter):
         pop_n = lymph_test.pop
 
+        aa_list = ['A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M',
+                   'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'Y']
+
         for i in range(0, pop_n):
             self.selection_dict[i] = lymph_test.paratope  # Creates a dictionary with each population as keys and the
             # paratopes as values
 
-        aa_list = ['A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M',
-                   'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'Y']
+            for key in self.selection_dict.keys():
+                self.selection_dict[key] = [lymph_test.n]  # Each population will undergo clonal selection as
+                # opposed to each individual because the likelihood of substitution would be the same for each
+                # individual in the population.
 
-        for i in aa_list:
-            self.likelihood[i] = 0
+        for j in aa_list:
+            self.likelihood[j] = 0
 
-        count = 0   # Track the amount of iterations until max-affinity
+        count = 0  # Track the amount of iterations until max-affinity
         # for pop in self.selection_dict.keys():
-
-
-

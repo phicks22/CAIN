@@ -1,6 +1,6 @@
 import argparse
 
-root_dir = '//'
+root_dir = '/Users/parkerhicks/Documents/GitHub/Python/Thesis_Notebook/'
 
 
 def ant_lymph_parser():

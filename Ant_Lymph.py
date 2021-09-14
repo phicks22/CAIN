@@ -2,7 +2,6 @@ import os
 import random
 import sys
 import unittest
-sys.path.append(os.path.abspath(os.path.join('', 'Arg_Parser')))
 from Arg_Parser import *
 args = ant_lymph_parser().parse_args(sys.argv[1:])
 
@@ -19,9 +18,10 @@ class Antigen:
 
 class Lymphocyte:
 
-    def __init__(self, paratope, pop, n):
+    def __init__(self, paratope, pop_num, n):
         self.paratope = paratope
-        self.pop = pop
+        self.pop_num = pop_num
+        self.pop = dict()
         self.n = n
         self.divide_l = 1
 
@@ -38,20 +38,18 @@ class Lymphocyte:
         """
         aa_list = ['A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M',
                    'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'Y']  # List of all possible amino acids
-        for i in range(len_epitope):
-            self.paratope += (random.choice(aa_list))
+        for i in self.pop_num:
+            for j in range(len_epitope):
+                self.paratope += (random.choice(aa_list))
+                self.pop[i] = self.paratope
 
-        return self.paratope
+        return self.pop
 
 
-if __name__ == '__main__':
+ant_test = Antigen(epitope=args.epitope, pop_num=args.pop_num, n=args.pop_size, division_rate=args.division_rate)
+lymph_test = Lymphocyte(paratope='', pop_num=1, n=1)
 
-    ant_test = Antigen(epitope=args.epitope, pop_num=args.pop_num, n=args.pop_size, division_rate=args.division_rate)
-    lymph_test = Lymphocyte('', 1, 1)
-    print(ant_test)
-
-    lymph_test_gen_para = lymph_test.gen_para(len(ant_test.epitope))
-    print(lymph_test.paratope)
+lymph_test_gen_para = lymph_test.gen_para(len(ant_test.epitope))
 
 
 class TestCases(unittest.TestCase):
