@@ -29,11 +29,11 @@ class Lymphocyte:
 
     def gen_para(self, len_epitope):
         """
-        Randomly generates a paratope of the same length as the antigen epitope.
+        Randomly generates population of randomly generated paratopes of the same length as the antigen epitope.
 
         Args: length
 
-        Returns: paratope as a string
+        Returns: population dictionary of paratopes
 
         """
         aa_list = ['A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M',
