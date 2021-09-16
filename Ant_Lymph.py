@@ -38,7 +38,7 @@ class Lymphocyte:
         """
         aa_list = ['A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M',
                    'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'Y']  # List of all possible amino acids
-        for i in self.pop_num:
+        for i in range(0, self.pop_num):
             for j in range(len_epitope):
                 self.paratope += (random.choice(aa_list))
                 self.pop[i] = self.paratope
@@ -50,6 +50,9 @@ ant_test = Antigen(epitope=args.epitope, pop_num=args.pop_num, n=args.pop_size, 
 lymph_test = Lymphocyte(paratope='', pop_num=1, n=1)
 
 lymph_test_gen_para = lymph_test.gen_para(len(ant_test.epitope))
+
+# TODO: use lymph_test_gen_para to flow to bcell selection and iterate through each paratope in the population to add
+#  to selection dict.
 
 
 class TestCases(unittest.TestCase):
