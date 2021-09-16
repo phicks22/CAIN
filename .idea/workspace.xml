@@ -27,10 +27,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d445426-7faa-4ae8-be1a-0c57e9dd020e" name="Default Changelist" comment="Updated Ant_Lymph.py to implement a dictionary of populations of Lymphocytes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ant_Lymph.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ant_Lymph.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arg_Parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Arg_Parser.py" afterDir="false" />
+    <list default="true" id="6d445426-7faa-4ae8-be1a-0c57e9dd020e" name="Default Changelist" comment="Updated Bcell_Selection.py to calculate substitution likelihoods.">
       <change beforePath="$PROJECT_DIR$/Bcell_Selection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bcell_Selection.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -377,7 +374,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631603548549</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Updated Bcell_Selection.py to calculate substitution likelihoods.">
+      <created>1631821537877</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1631821537877</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -415,6 +419,7 @@
     <MESSAGE value="updated Bcell_Selection.py" />
     <MESSAGE value="Added Arg_Parser.py and updated the Ant_Lymph.py to integrate the arguments." />
     <MESSAGE value="Updated Ant_Lymph.py to implement a dictionary of populations of Lymphocytes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Ant_Lymph.py to implement a dictionary of populations of Lymphocytes" />
+    <MESSAGE value="Updated Bcell_Selection.py to calculate substitution likelihoods." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Bcell_Selection.py to calculate substitution likelihoods." />
   </component>
 </project>

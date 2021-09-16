@@ -23,6 +23,15 @@ class Selection:
         self.likelihood = dict()
 
     def clonal_selection(self, exchange_iter):
+        """
+        Performs clonal selection on each B-cell population generated in Ant_Lymph.py. Each random paratope generated
+        represents a population with a property n as the number of individuals in the population. This will become
+        relevant in the immune response. Substitution likelihoods are calculated for each character of the paratope
+        taken from the PAM 250 matrix. This will run for exchange_iter number of iterations.
+
+        :param exchange_iter:
+        :return: Population(s) with max affinity to the antigen epitope.
+        """
         pop_n = lymph_test.pop
         ant = ant_test.epitope
 
