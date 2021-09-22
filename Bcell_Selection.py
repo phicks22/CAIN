@@ -4,15 +4,17 @@ import os
 import sys
 import Arg_Parser
 from Arg_Parser import *
-from Ant_Lymph import lymph_test, ant_test
+from Ant_Lymph import lymph, antigen
+
+args = bcell_selection_parser().parse_args(sys.argv[1:])
 
 matrix = np.loadtxt(os.path.join(Arg_Parser.root_dir, "Resources/PAM_250.txt"))
 matrix = np.array(matrix)
 
 col_names = ("A", "R", "N", "D", "C", "Q", "E", "G", "H", "I", "L", "K", "M", "F", "P", "S", "T", "W", "Y", "V")
 row_names = col_names
-pam = pd.DataFrame(matrix, columns=col_names, index=row_names)
-print(pam)
+pam = pd.DataFrame(matrix, columns=col_names, index=row_names)  # Creates a square matrix of substitution likelihoods.
+col = pam["A"]
 
 
 class Selection:
@@ -32,28 +34,46 @@ class Selection:
         :param exchange_iter:
         :return: Population(s) with max affinity to the antigen epitope.
         """
-        pop_n = lymph_test.pop
-        ant = ant_test.epitope
+        pop_n = lymph.pop_num
+        ant = antigen.epitope
 
         aa_list = ['A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M',
                    'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'Y']
 
         for i in range(0, pop_n):
-            self.selection_dict[i] = lymph_test.paratope  # Creates a dictionary with each population as keys and the
+            self.selection_dict[i] = lymph.paratope  # Creates a dictionary with each population as keys and the
             # paratopes as values
 
         for j in aa_list:
-            self.likelihood[j] = 0
+            self.likelihood[j] = dict()
 
-            for key in self.selection_dict.keys():
-                # fitness =
-                self.selection_dict[key] = [self.likelihood, lymph_test.n, fitness]  # Each population will undergo clonal
-                # selection as opposed to each individual because the likelihood of substitution would be the same for
-                # each individual in the population.
+        for key, value in self.selection_dict.items():
+            para = value
+            match_number = len(list(filter(lambda xy: xy[0] == xy[1], zip(ant, para))))  # Identifies the
+            # index-specific match integer
+
+            fitness = match_number / len(ant)
+            self.selection_dict[key] = [lymph.paratope, self.likelihood, lymph.n,
+                                        fitness]  # Each population will undergo
+            # clonal selection as opposed to each individual because the likelihood of substitution would be the
+            # same for each individual in the population.
 
         count = 0  # Track the amount of iterations until max-affinity
-        for pop in self.selection_dict.keys():  # Iterates through each population's paratope in selection_dict
-            for i in self.selection_dict[pop]:  # Iterates through each character of the paratope string
-                for col in pam[:, col]:  # Iterates through the PAM matrix to calculate likelihood of each amino acid
-                    # in the paratope to substitute for another.
-                    self.likelihood[col] = pam[i, col]
+        for k in range(0, len(self.selection_dict)):  # Iterates through each population's paratope in selection_dict
+            for pop in self.selection_dict.values():
+                other_likelihood = dict()
+                for aa in pop[0]:  # Iterates through each character of the paratope string
+                    for row in row_names:  # Iterates through the PAM matrix to calculate likelihood of each amino
+                        # acid in the paratope to substitute for another.
+                        col = pam[aa]
+                        # for l in range(0, 19):
+                        value = col[row]
+                        other_likelihood[row] = value
+                    self.likelihood[aa] = other_likelihood
+            print(self.likelihood)
+
+
+example = Selection()
+# col = pam["A"]
+# print(col[row_names[0]])
+print(example.clonal_selection(1))

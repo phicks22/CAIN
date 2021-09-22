@@ -1,4 +1,3 @@
-import os
 import random
 import sys
 import unittest
@@ -41,18 +40,15 @@ class Lymphocyte:
         for i in range(0, self.pop_num):
             for j in range(len_epitope):
                 self.paratope += (random.choice(aa_list))
-                self.pop[i] = self.paratope
 
-        return self.pop
+        return self.paratope
 
 
-ant_test = Antigen(epitope=args.epitope, pop_num=args.pop_num, n=args.pop_size, division_rate=args.division_rate)
-lymph_test = Lymphocyte(paratope='', pop_num=1, n=1)
+antigen = Antigen(epitope='ACDEFGHIKLM', pop_num=1, n=1, division_rate=1)
+lymph_init = Lymphocyte(paratope='', pop_num=1, n=1)
 
-lymph_test_gen_para = lymph_test.gen_para(len(ant_test.epitope))
-
-# TODO: use lymph_test_gen_para to flow to bcell selection and iterate through each paratope in the population to add
-#  to selection dict.
+lymph_paratope = lymph_init.gen_para(len(antigen.epitope))
+lymph = Lymphocyte(paratope=lymph_paratope, pop_num=1, n=1)
 
 
 class TestCases(unittest.TestCase):

@@ -1,5 +1,5 @@
 import random
-from Ant_Lymph import ant_test, lymph_test
+from Ant_Lymph import antigen, lymph
 
 # Calling instances of both Ant_Lymph classes
 #ant1 = Antigen('ACDEFGHIKLM', 1, 1)
@@ -54,4 +54,4 @@ class Main:
 
 example = Main()
 
-print(example.binding(ant_test.epitope, lymph_test.paratope))
+print(example.binding(antigen.epitope, lymph.paratope))

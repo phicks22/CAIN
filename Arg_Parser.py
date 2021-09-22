@@ -4,7 +4,8 @@ root_dir = '/Users/parkerhicks/Documents/GitHub/Python/Thesis_Notebook/'
 
 
 def ant_lymph_parser():
-    parser = argparse.ArgumentParser(description='Set population paramters for antigens and lymphocytes.', add_help=True)
+    parser = argparse.ArgumentParser(description='Set population paramters for antigens and lymphocytes.',
+                                     add_help=True)
     req_args = parser.add_argument_group('Required Arguments')
     req_args.add_argument('-e', dest='epitope',
                           help='REQUIRED: Set the desired epitope for the antigen [Example: ACDEFGHIKLM].',
@@ -18,8 +19,10 @@ def ant_lymph_parser():
     req_args.add_argument('-p', dest='pop_num',
                           help='REQUIRED: Set the number of antigen and lymphocyte populations.',
                           required=True)
+    return parser
 
-def bcell_selection_parster():
+
+def bcell_selection_parser():
     parser = argparse.ArgumentParser(description='Set population paramters for antigens and lymphocytes.',
                                      add_help=True)
     req_args = parser.add_argument_group('Required Arguments')
@@ -35,5 +38,4 @@ def bcell_selection_parster():
     req_args.add_argument('-p', dest='pop_num',
                           help='REQUIRED: Set the number of antigen and lymphocyte populations.',
                           required=True)
-
     return parser
