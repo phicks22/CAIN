@@ -27,12 +27,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d445426-7faa-4ae8-be1a-0c57e9dd020e" name="Default Changelist" comment="Added comments to clonal_selection function in Bcell_Selection.py">
+    <list default="true" id="6d445426-7faa-4ae8-be1a-0c57e9dd020e" name="Default Changelist" comment="Implemented likelihood dictionary for each amino acid in the paratope in Bcell_Selection.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ant_Lymph.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ant_Lymph.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arg_Parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Arg_Parser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bcell_Selection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bcell_Selection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notes" beforeDir="false" afterPath="$PROJECT_DIR$/Notes" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -392,7 +391,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631821876114</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Implemented likelihood dictionary for each amino acid in the paratope in Bcell_Selection.py">
+      <created>1632274598913</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1632274598913</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -432,6 +438,7 @@
     <MESSAGE value="Updated Ant_Lymph.py to implement a dictionary of populations of Lymphocytes" />
     <MESSAGE value="Updated Bcell_Selection.py to calculate substitution likelihoods." />
     <MESSAGE value="Added comments to clonal_selection function in Bcell_Selection.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added comments to clonal_selection function in Bcell_Selection.py" />
+    <MESSAGE value="Implemented likelihood dictionary for each amino acid in the paratope in Bcell_Selection.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented likelihood dictionary for each amino acid in the paratope in Bcell_Selection.py" />
   </component>
 </project>

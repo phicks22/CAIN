@@ -20,7 +20,7 @@ class Lymphocyte:
     def __init__(self, paratope, pop_num, n):
         self.paratope = paratope
         self.pop_num = pop_num
-        self.pop = dict()
+        self.pops = dict()
         self.n = n
         self.divide_l = 1
 
@@ -37,18 +37,19 @@ class Lymphocyte:
         """
         aa_list = ['A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M',
                    'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'Y']  # List of all possible amino acids
-        for i in range(0, self.pop_num):
-            for j in range(len_epitope):
-                self.paratope += (random.choice(aa_list))
+        paratope = ''
+        for i in range(len_epitope):
+            paratope += (random.choice(aa_list))
 
-        return self.paratope
+        return paratope
 
 
 antigen = Antigen(epitope='ACDEFGHIKLM', pop_num=1, n=1, division_rate=1)
-lymph_init = Lymphocyte(paratope='', pop_num=1, n=1)
+lymph = Lymphocyte(paratope='', pop_num=2, n=1)
 
-lymph_paratope = lymph_init.gen_para(len(antigen.epitope))
-lymph = Lymphocyte(paratope=lymph_paratope, pop_num=1, n=1)
+for k in range(0, lymph.pop_num):
+    paratope = lymph.gen_para(len(antigen.epitope))
+    lymph.pops[k] = [paratope]
 
 
 class TestCases(unittest.TestCase):

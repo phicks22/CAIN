@@ -65,6 +65,13 @@ Coding Process:
         located in the Resources directory. Columns and row names of the dataframe correspond to each respective
         amino acid.
 
+        210921
+        Had to go back and rewrite a good chunk of the clonal selection function because the substitution likelihoods
+        were not accurate for each paratope. The substitution likelihoods from the final population were copying
+        themselves into the other populations' paratopes. This was recified by creating a self.likelihood dictionary
+        where the likelihoods are only identified once. Since the likelihoods are always the same for each amino acid,
+        this is plausable.
+
     Arg_Parser
 
         210912

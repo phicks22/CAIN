@@ -34,18 +34,24 @@ class Selection:
         :param exchange_iter:
         :return: Population(s) with max affinity to the antigen epitope.
         """
-        pop_n = lymph.pop_num
         ant = antigen.epitope
 
         aa_list = ['A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M',
                    'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'Y']
 
-        for i in range(0, pop_n):
-            self.selection_dict[i] = lymph.paratope  # Creates a dictionary with each population as keys and the
-            # paratopes as values
+        self.selection_dict = lymph.pops  # Creates a dictionary with each population as keys and the
+        # paratopes as values
 
-        for j in aa_list:
-            self.likelihood[j] = dict()
+        for item in aa_list:
+            self.likelihood[item] = 0
+
+        for aa in self.likelihood.keys():
+            other_likelihood = dict()
+            for row in row_names:
+                col = pam[aa]  # Calls the df column for the amino acid
+                value = col[row]  # Calls the value for the column and row
+                other_likelihood[row] = value
+            self.likelihood[aa] = other_likelihood
 
         for key, value in self.selection_dict.items():
             para = value
@@ -53,24 +59,26 @@ class Selection:
             # index-specific match integer
 
             fitness = match_number / len(ant)
-            self.selection_dict[key] = [lymph.paratope, self.likelihood, lymph.n,
-                                        fitness]  # Each population will undergo
-            # clonal selection as opposed to each individual because the likelihood of substitution would be the
-            # same for each individual in the population.
+            value.append(lymph.n)
+            value.append(fitness)
+            # Each population will undergo clonal selection as opposed to each individual because the likelihood of
+            # substitution would be the same for each individual in the population.
 
         count = 0  # Track the amount of iterations until max-affinity
-        for k in range(0, len(self.selection_dict)):  # Iterates through each population's paratope in selection_dict
-            for pop in self.selection_dict.values():
-                other_likelihood = dict()
-                for aa in pop[0]:  # Iterates through each character of the paratope string
-                    for row in row_names:  # Iterates through the PAM matrix to calculate likelihood of each amino
-                        # acid in the paratope to substitute for another.
-                        col = pam[aa]
-                        # for l in range(0, 19):
-                        value = col[row]
-                        other_likelihood[row] = value
-                    self.likelihood[aa] = other_likelihood
-            print(self.likelihood)
+        # for pop in range(0, len(self.selection_dict)):  # Iterates through each population in selection_dict
+        #     print(pop)
+        for item in self.selection_dict.values():
+            for a in item[0]:
+                v = list(self.likelihood[a].values())
+                k = list(self.likelihood[a].keys())
+                max1 = max(v)
+                max2 = 0
+                for m in v:
+                    if max2 < m < max1:
+                        max2 = m
+                print(a, "--->", k[v.index(max2)])
+
+        print(self.selection_dict)
 
 
 example = Selection()
