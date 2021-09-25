@@ -14,7 +14,6 @@ matrix = np.array(matrix)
 col_names = ("A", "R", "N", "D", "C", "Q", "E", "G", "H", "I", "L", "K", "M", "F", "P", "S", "T", "W", "Y", "V")
 row_names = col_names
 pam = pd.DataFrame(matrix, columns=col_names, index=row_names)  # Creates a square matrix of substitution likelihoods.
-col = pam["A"]
 
 
 class Selection:
@@ -64,24 +63,26 @@ class Selection:
             # Each population will undergo clonal selection as opposed to each individual because the likelihood of
             # substitution would be the same for each individual in the population.
 
-        count = 0  # Track the amount of iterations until max-affinity
-        # for pop in range(0, len(self.selection_dict)):  # Iterates through each population in selection_dict
-        #     print(pop)
-        for item in self.selection_dict.values():
-            for a in item[0]:
-                v = list(self.likelihood[a].values())
-                k = list(self.likelihood[a].keys())
-                max1 = max(v)
-                max2 = 0
-                for m in v:
-                    if max2 < m < max1:
-                        max2 = m
-                print(a, "--->", k[v.index(max2)])
+        ############# Selection Process #############
+        for i in range(0, exchange_iter):
+            for item in self.selection_dict.values():
+                product = ''
+                for a in item[0]:
+                    v = list(self.likelihood[a].values())
+                    k = list(self.likelihood[a].keys())
+                    v.remove(v[k.index(a)])
+                    k.remove(a)
+                    max1 = max(v)
+                    if max1 > 0:
+                        product += k[v.index(max1)]
+                    else:
+                        product += a
 
-        print(self.selection_dict)
+                print(item[0], "----->", product)
+                item[0] = product
+
+        return self.selection_dict
 
 
 example = Selection()
-# col = pam["A"]
-# print(col[row_names[0]])
 print(example.clonal_selection(1))

@@ -70,7 +70,8 @@ Coding Process:
         were not accurate for each paratope. The substitution likelihoods from the final population were copying
         themselves into the other populations' paratopes. This was recified by creating a self.likelihood dictionary
         where the likelihoods are only identified once. Since the likelihoods are always the same for each amino acid,
-        this is plausable.
+        this is plausable. I also decided to substitute with the second maximum value likelihood because the maximum
+        value for an amino acid is always itself.
 
     Arg_Parser
 

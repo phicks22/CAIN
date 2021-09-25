@@ -1,10 +1,11 @@
 import random
 from Ant_Lymph import antigen, lymph
 
+
 # Calling instances of both Ant_Lymph classes
-#ant1 = Antigen('ACDEFGHIKLM', 1, 1)
-#lymph1 = Lymphocyte('', 1, 1)
-#lymph2 = lymph1.gen_para(len(ant1.epitope))
+# ant1 = Antigen('ACDEFGHIKLM', 1, 1)
+# lymph1 = Lymphocyte('', 1, 1)
+# lymph2 = lymph1.gen_para(len(ant1.epitope))
 
 
 class Main:
@@ -38,7 +39,6 @@ class Main:
 
         return self.iteration_counts  # Holds the time it takes for antigen/lymphocyte binding
 
-
     def immune_response(self):
         """
         Simulates immune response games between the antigen and lymphocyte populations.
@@ -48,8 +48,7 @@ class Main:
         """
         response_time = 0
 
-        #for pop in lymph_test.result_pop:
-
+        # for pop in lymph_test.result_pop:
 
 
 example = Main()
