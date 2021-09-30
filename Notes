@@ -73,6 +73,12 @@ Coding Process:
         this is plausable. I also decided to substitute with the second maximum value likelihood because the maximum
         value for an amino acid is always itself.
 
+        210925
+        Today I picked up from where I left last time. I had most of the clonal selection algorithm completed except for
+        the final product where maximum likelihoods are calculated and then amino acids are substituted out for another.
+        I completed this and am going to implement a break in the loop where if maximum affinity is reached, selection
+        will cease.
+
     Arg_Parser
 
         210912

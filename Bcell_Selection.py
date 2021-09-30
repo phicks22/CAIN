@@ -2,10 +2,9 @@ import pandas as pd
 import numpy as np
 import os
 import sys
+from tqdm import tqdm
 import Arg_Parser
 from Arg_Parser import *
-from Ant_Lymph import lymph, antigen
-
 args = bcell_selection_parser().parse_args(sys.argv[1:])
 
 matrix = np.loadtxt(os.path.join(Arg_Parser.root_dir, "Resources/PAM_250.txt"))
@@ -23,14 +22,17 @@ class Selection:
         self.selection_dict = dict()
         self.likelihood = dict()
 
-    def clonal_selection(self, exchange_iter):
+    def clonal_selection(self, exchange_iter, antigen, lymphocyte, max_affinity=True):
         """
         Performs clonal selection on each B-cell population generated in Ant_Lymph.py. Each random paratope generated
         represents a population with a property n as the number of individuals in the population. This will become
         relevant in the immune response. Substitution likelihoods are calculated for each character of the paratope
         taken from the PAM 250 matrix. This will run for exchange_iter number of iterations.
 
-        :param exchange_iter:
+        :param lymphocyte:
+        :param antigen:
+        :param max_affinity: Breaks the selection loop if paratope fitness is equal to 1.
+        :param exchange_iter: The amount of selection iterations before fitness is calculated.
         :return: Population(s) with max affinity to the antigen epitope.
         """
         ant = antigen.epitope
@@ -38,7 +40,7 @@ class Selection:
         aa_list = ['A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M',
                    'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'Y']
 
-        self.selection_dict = lymph.pops  # Creates a dictionary with each population as keys and the
+        self.selection_dict = lymphocyte.pops  # Creates a dictionary with each population as keys and the
         # paratopes as values
 
         for item in aa_list:
@@ -58,13 +60,15 @@ class Selection:
             # index-specific match integer
 
             fitness = match_number / len(ant)
-            value.append(lymph.n)
+            value.append(lymphocyte.n)
             value.append(fitness)
             # Each population will undergo clonal selection as opposed to each individual because the likelihood of
             # substitution would be the same for each individual in the population.
 
         ############# Selection Process #############
-        for i in range(0, exchange_iter):
+        print("Starting populations: ", self.selection_dict)
+        print("Antigen Epitope: ", ant)
+        for i in tqdm(range(0, exchange_iter)):
             for item in self.selection_dict.values():
                 product = ''
                 for a in item[0]:
@@ -78,11 +82,18 @@ class Selection:
                     else:
                         product += a
 
-                print(item[0], "----->", product)
                 item[0] = product
+                para = item[0]
+                match_number = len(list(filter(lambda xy: xy[0] == xy[1], zip(ant, para))))
+                fitness = match_number / len(ant)
+                item[2] = fitness
+
+                if max_affinity:
+                    if fitness == 1:
+                        break
 
         return self.selection_dict
 
 
-example = Selection()
-print(example.clonal_selection(1))
+# example = Selection()
+# print(example.clonal_selection(1000000))
