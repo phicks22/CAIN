@@ -49,6 +49,13 @@ Coding Process:
         no probability of binding between the two strings. To rectify this I added a break statement directly after the
         beginning of the while loop so that if count == 0, the loop will not run and the Init_binding_time = 0.
 
+        210930
+        Today I began the immune response algorithm that runs an agent-based game for each individual in each lymphocyte
+        population against each individual in the antigen population. To execute this, a random number between 0 and 1
+        is drawn. If the number is greater than the fitness of the lymphocyte population, then the antigen wins and visa
+        versa. If one population wins, 1 is subtracted from the number of individuals in the opposing population. Thus
+        far, response times for accounting for each individual and also each population are being recorded.
+
 
     Bcell_Selection
 
