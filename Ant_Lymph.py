@@ -44,14 +44,6 @@ class Lymphocyte:
         return paratope
 
 
-# antigen = Antigen(epitope= args.epitope, pop_num=1, n=1, division_rate=1)
-# lymph = Lymphocyte(paratope='', pop_num=4, n=1)
-#
-# for k in range(0, lymph.pop_num):
-#     paratope = lymph.gen_para(len(antigen.epitope))
-#     lymph.pops[k] = [paratope]
-
-
 class TestCases(unittest.TestCase):
 
     def len_epitope_equals_len_paratope(self, paratope, epitope):

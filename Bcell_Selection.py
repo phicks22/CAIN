@@ -1,18 +1,18 @@
 import pandas as pd
 import numpy as np
+import random
 import os
-import sys
 from tqdm import tqdm
 import Arg_Parser
-from Arg_Parser import *
-args = bcell_selection_parser().parse_args(sys.argv[1:])
 
+############ Set PAM matrix location here ############
 matrix = np.loadtxt(os.path.join(Arg_Parser.root_dir, "Resources/PAM_250.txt"))
 matrix = np.array(matrix)
 
 col_names = ("A", "R", "N", "D", "C", "Q", "E", "G", "H", "I", "L", "K", "M", "F", "P", "S", "T", "W", "Y", "V")
 row_names = col_names
 pam = pd.DataFrame(matrix, columns=col_names, index=row_names)  # Creates a square matrix of substitution likelihoods.
+pam = pam / np.max(pam)
 
 
 class Selection:
@@ -78,7 +78,11 @@ class Selection:
                     k.remove(a)
                     max1 = max(v)
                     if max1 > 0:
-                        product += k[v.index(max1)]
+                        q = random.randrange(-1, 1)
+                        if max1 >= q:
+                            product += k[v.index(max1)]
+                        else:
+                            product += a
                     else:
                         product += a
 
@@ -93,7 +97,3 @@ class Selection:
                         break
 
         return self.selection_dict
-
-
-# example = Selection()
-# print(example.clonal_selection(1000000))
