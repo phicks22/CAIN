@@ -46,42 +46,65 @@ class Main:
 
         return self.iteration_counts  # Holds the time it takes for antigen/lymphocyte binding
 
-    def immune_response(self, population_dict, antigen_pop, response_time):
+    def immune_response(self, population_dict, antigen_pop, response_time, a_div):
         """
         Simulates immune response games between the antigen and lymphocyte populations.
 
+        :arg population_dict --> Post-selection dictionary from B-cell selection algorithm
+        :arg antigen_pop --> Dictionary for the single antigen population
+        :arg response_time --> Number of iterations allowed for the immune response games
 
-        :return:
+        :return: Population dictionary
         """
         response_time_individual = 0
         response_time_population = 0
 
         # Run an agent-based game between each lymphocyte population and the antigen population
         for i in range(0, response_time):
-            for pop in population_dict.keys():
-                if pop[1] <= 0:  # Deletes "dead" lymphocyte populations
-                    del population_dict[pop]
-                for n in pop[1]:    # Runs a game where a random number between 0 and 1 is picked.
+            for pop in population_dict.values():
+                for n in range(0, pop[1]):    # Runs a game where a random number between 0 and 1 is picked.
                     draw = random.random()
                     if draw > pop[2]:  # Removes 1 individual from the lymphocyte population (antigen wins)
-                        n -= 1
+                        pop[1] -= 1
+                        antigen_pop.n += a_div
                     elif draw <= pop[2]:    # Removes 1 individual from the antigen population (lymphocyte wins)
-                        antigen_pop[0][1] -= 1
+                        antigen_pop.n -= 1
+                        pop[1] += 2
                     else:
                         print("Error: Draw exceeds 0-1 range.")
                     response_time_individual += 1
+                  # Deletes "dead" lymphocyte populations
+            for key in list(population_dict.keys()):
+                n = population_dict.get(key)[1]
+                if n <= 0:
+                    del population_dict[key]
                 response_time_population += 1
+        return population_dict
 
 
 if __name__ == '__main__':
 
-    antigen = Antigen(epitope=args.epitope, pop_num=1, n=1, division_rate=1)
-    lymph = Lymphocyte(paratope='', pop_num=4, n=1)
+    pop_size = int(args.pop_size)
+    pop_num = int(args.pop_num)
+    epitope = args.epitope
+    ant_div = int(args.division_rate)
+    exchange_iter = int(args.exchange_iter)
+    antigen = Antigen(epitope=epitope, pop_num=1, n=1, division_rate=ant_div)
+    lymph = Lymphocyte(paratope='', pop_num=pop_num, n=pop_size)
 
     for k in range(0, lymph.pop_num):
         paratope = lymph.gen_para(len(antigen.epitope))
         lymph.pops[k] = [paratope]
 
     selection = Selection()
-    populations = selection.clonal_selection(exchange_iter=10, antigen=antigen,
+    print("_________________________________________________________________")
+    populations = selection.clonal_selection(exchange_iter=exchange_iter, antigen=antigen,
                                              lymphocyte=lymph)  # Selection dictionary
+    print("_________________________________________________________________")
+
+    response = Main()
+    final_pops = response.immune_response(populations, antigen, response_time=5, a_div=ant_div)
+    print(final_pops)
+    print("Immune Response Completed")
+    print("_________________________________________________________________")
+
