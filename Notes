@@ -1,5 +1,16 @@
 Table of Contents:
 
+Sections:
+    Coding Process:
+        i. Ant_Lymph
+        ii. Main
+        iii. Bcell_Selection
+        iv. Parameter_Clustering
+        v. Arg_Parser
+    Testing:
+        i. Ant_Lymph
+        ii. Main
+
 Introduction/Objective:
 
 Coding Process:
@@ -56,6 +67,14 @@ Coding Process:
         versa. If one population wins, 1 is subtracted from the number of individuals in the opposing population. Thus
         far, response times for accounting for each individual and also each population are being recorded.
 
+        211115
+        Updated the PAM likelihood selection where probabilistic chance is added to the process to insure that the same
+        outcome doesn't occur everytime. I also fixed an issue that I was having in the immune response function where
+        populations of n=0 were not being deleted and all population n values were set to 0. I had to change the way I
+        iterated through the populations dictionary and selected the populations where n=0. This is now fixed. I also
+        set up the k-means clustering algorithm, although this may not be the correct algorithm to use based on the
+        data. Once I collect my data, I will attempt the k-means clustering algorithm, but I may have to try others.
+
 
     Bcell_Selection
 
@@ -86,6 +105,15 @@ Coding Process:
         I completed this and am going to implement a break in the loop where if maximum affinity is reached, selection
         will cease.
 
+    Parameter_Clustering
+
+        211017
+        Today I created the unsupervised learning hyper-parameter clustering for data analysis. So far, the parameters
+        have been addressed to lists according to their respective post-game lymphocyte populations. From here, one-hot-
+        -encoding will be used to assign coordinates to each lymphocyte population in 5-dimensional space. A clustering
+        algorithm (probably k-means) will be used to generate clusters of populations to distinguish the lowest and top
+        performing hyper-parameter combinations.
+
     Arg_Parser
 
         210912
@@ -109,4 +137,8 @@ Testing:
         and import all relevant data from the other files.
 
     Main
+
+        211017
+        The immune response algorithm provided an error where the lymphocyte populations with n=0 could not be deleted
+        due to improper calling of the population_dict dictionary keys. This was fixed.
 
