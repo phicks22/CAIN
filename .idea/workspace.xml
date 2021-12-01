@@ -27,9 +27,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d445426-7faa-4ae8-be1a-0c57e9dd020e" name="Default Changelist" comment="Cleaned up unused parameters and lines.">
-      <change afterPath="$PROJECT_DIR$/Parameter_Clustering.py" afterDir="false" />
+    <list default="true" id="6d445426-7faa-4ae8-be1a-0c57e9dd020e" name="Default Changelist" comment="Added k-means and BIRCH clustering algorithms.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ant_Lymph.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ant_Lymph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arg_Parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Arg_Parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bcell_Selection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bcell_Selection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notes" beforeDir="false" afterPath="$PROJECT_DIR$/Notes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -445,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638122161369</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Added k-means and BIRCH clustering algorithms.">
+      <created>1638123423933</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1638123423933</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -461,7 +472,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed paratope issue by calling the Ant_Lymph.py classes in Main.py" />
     <MESSAGE value="Fixed paratope issue by adding a break statement within the while loop if count==0." />
     <MESSAGE value="Added to my lab notes." />
     <MESSAGE value="Simplified the import statements." />
@@ -486,6 +496,7 @@
     <MESSAGE value="Added notes regarding the immune response algorithm in Main.py and the unsupervised clustering" />
     <MESSAGE value="Fixed dictionary key deletion issues." />
     <MESSAGE value="Cleaned up unused parameters and lines." />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up unused parameters and lines." />
+    <MESSAGE value="Added k-means and BIRCH clustering algorithms." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added k-means and BIRCH clustering algorithms." />
   </component>
 </project>
