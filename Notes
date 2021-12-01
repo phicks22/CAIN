@@ -13,6 +13,34 @@ Sections:
 
 Introduction/Objective:
 
+        Multiple disciplines such as biology, economics, and sociology use game theory to mathematically analyze and
+        predict the outcomes of conflict situations. Within a game, there are a known and finite number of players that
+        follow a given set of rules (Jarosz & Burczyński, 2011a). Within the genetics field specifically, game theory is
+        used to calculate the relative fitnesses of specific genotypes and phenotypes of a given population over a set
+        amount of time. The conflict situation of interest for geneticists is the selection of one genotype over
+        another. An individual has a genotype composed of AA, AB, or BB alleles representing a corresponding phenotype.
+        Each allele is given a calculated frequency: x and (1-x). In a simple game with 2 alleles A and B, a 2X2 matrix
+        can represent the conflict situation between two genotypes. For two players, traditional game concepts are
+        easily applied, however when multiplayer games are simulated, they can result in complicated dynamics
+        (Gokhale & Traulsen, 2014), thus emphasizing the need for computer generated game models. Computer generated
+        game theory is already used to understand cancer cell phenomena (Archetti & Pienta, 2019), to optimize cancer
+        treatments ( Staňková et al., 2019), and can be used to also model games within the adaptive immune system.
+
+        The clonal_selection() function represents the positive selection immunological process known as affinity
+        maturation where slight mutation rates gradually produce B-cells whose paratopes (lymphocyte binding site) have
+        a higher affinity to the antigen’s epitope (antigen binding site) and suppression() is representative of
+        negative selection B-cell suppression that occurs via self-antigen presentation to the B-cell which, if it
+        binds to the self antigen, induces apoptosis. A mutation in a single key position can increase affinity by more
+        than one order of magnitude against haptens, but for protein antigens more than one key position is required to
+        increase antibody affinity (Murugan et al., 2018).
+
+        The function then runs for a user-set number of iter = i iterations. After all iterations are complete, the
+        remaining individuals in the player n population are placed into result_population. From these parameters and
+        functions, the IMGAMO algorithm can currently be used to simulate positive and negative selection of clonal
+        B-cells (Jarosc & Burczyński, 2011b). The goal of this study is to include antigen-lymphocyte interactions prior
+        to and following the clonal selection of B-cells in the IMGAMO algorithm to provide a broader representation of
+        the adaptive immune system.
+
 Coding Process:
 
     Ant_Lymph
@@ -71,9 +99,7 @@ Coding Process:
         Updated the PAM likelihood selection where probabilistic chance is added to the process to insure that the same
         outcome doesn't occur everytime. I also fixed an issue that I was having in the immune response function where
         populations of n=0 were not being deleted and all population n values were set to 0. I had to change the way I
-        iterated through the populations dictionary and selected the populations where n=0. This is now fixed. I also
-        set up the k-means clustering algorithm, although this may not be the correct algorithm to use based on the
-        data. Once I collect my data, I will attempt the k-means clustering algorithm, but I may have to try others.
+        iterated through the populations dictionary and selected the populations where n=0. This is now fixed.
 
 
     Bcell_Selection
@@ -113,6 +139,10 @@ Coding Process:
         -encoding will be used to assign coordinates to each lymphocyte population in 5-dimensional space. A clustering
         algorithm (probably k-means) will be used to generate clusters of populations to distinguish the lowest and top
         performing hyper-parameter combinations.
+
+        211115
+        I set up the k-means clustering algorithm, although this may not be the correct algorithm to use based on the
+        data. Once I collect my data, I will attempt the k-means clustering algorithm, but I may have to try others.
 
     Arg_Parser
 
