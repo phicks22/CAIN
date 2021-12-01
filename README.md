@@ -26,13 +26,15 @@ ________________
 First: Set your working directory in the `Arg_Parser.py` file at the very top.
 Next, run the following command in the terminal, setting each argument per the desired parameters.
 ```bash
-$ python Main.py -e <amino_acid_sequence> -n 1 -d 1 -p 4
+$ python Main.py -e <amino_acid_sequence> -n 100 -d 2 -p 4 -ex 1000 -r 10
 ```
 Required arguments:
 * `-e`: Antigen linear epitope.
 * `-n`: Number of individuals in each B-cell population
 * `-d`: Antigen division rate
 * `-p`: Number of B-cell populations
+* `-ex`: Number of exchange iterations that occur during B-cell selection
+* `-r`: Number of immune response iterations
 
 Running `Main.py` initiates the B-cell selection algorithm and immune response simultaneously.
 
