@@ -30,9 +30,9 @@ class Lymphocyte:
         """
         Randomly generates population of randomly generated paratopes of the same length as the antigen epitope.
 
-        Args: length
+        :arg len_epitope: Length of the antigen epitope
 
-        Returns: population dictionary of paratopes
+        :return Population dictionary of paratopes
 
         """
         aa_list = ['A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M',
@@ -50,9 +50,10 @@ class TestCases(unittest.TestCase):
         """
         Tests if the length of the epitope is equal to the length of the paratope
 
-        Args: paratope, epitope
+        :arg paratope
+        :arg epitope
 
-        Returns: string
+        :return string
         """
         len_a = len(paratope)
         len_l = len(epitope)

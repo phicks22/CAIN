@@ -29,10 +29,11 @@ class Selection:
         relevant in the immune response. Substitution likelihoods are calculated for each character of the paratope
         taken from the PAM 250 matrix. This will run for exchange_iter number of iterations.
 
-        :param lymphocyte:
-        :param antigen:
-        :param max_affinity: Breaks the selection loop if paratope fitness is equal to 1.
-        :param exchange_iter: The amount of selection iterations before fitness is calculated.
+        :arg lymphocyte
+        :arg antigen
+        :arg max_affinity --> Breaks the selection loop if paratope fitness is equal to 1.
+        :arg exchange_iter --> The amount of selection iterations before fitness is calculated.
+
         :return: Population(s) with max affinity to the antigen epitope.
         """
         ant = antigen.epitope
@@ -40,8 +41,8 @@ class Selection:
         aa_list = ['A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M',
                    'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'Y']
 
-        self.selection_dict = lymphocyte.pops  # Creates a dictionary with each population as keys and the
-        # paratopes as values
+        # Create a dictionary with each population as keys and the paratopes as values
+        self.selection_dict = lymphocyte.pops
 
         for item in aa_list:
             self.likelihood[item] = 0
@@ -69,18 +70,27 @@ class Selection:
         print("Starting populations: ", self.selection_dict)
         print("Antigen Epitope: ", ant)
         for i in tqdm(range(0, exchange_iter)):
+
+            # Iterate through each population
             for item in self.selection_dict.values():
                 product = ''
+
+                # Iterate through each amino acid in the paratope sequence
                 for a in item[0]:
+                    # Index amino acids in the paratope to their PAM likelihood values
                     v = list(self.likelihood[a].values())
                     k = list(self.likelihood[a].keys())
+
+                    # Remove and prevent self substitutions
                     v.remove(v[k.index(a)])
                     k.remove(a)
+
+                    # Identify the maximum likelihood and substitute
                     max1 = max(v)
                     if max1 > 0:
-                        q = random.randrange(-1, 1)
+                        q = random.randrange(0, 1)
                         if max1 >= q:
-                            product += k[v.index(max1)]
+                            product += k[v.index(max1)]  # Substitutes the original amino acid with the new
                         else:
                             product += a
                     else:
@@ -88,6 +98,8 @@ class Selection:
 
                 item[0] = product
                 para = item[0]
+
+                # Calculate the fitness of each paratope after selection
                 match_number = len(list(filter(lambda xy: xy[0] == xy[1], zip(ant, para))))
                 fitness = match_number / len(ant)
                 item[2] = fitness

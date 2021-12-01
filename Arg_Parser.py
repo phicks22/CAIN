@@ -22,4 +22,7 @@ def ant_lymph_parser():
     req_args.add_argument('-ex', dest='exchange_iter',
                           help='REQUIRED: Set the desired epitope for the antigen [Example: ACDEFGHIKLM].',
                           required=True)
+    req_args.add_argument('-r', dest='response_time',
+                          help='REQUIRED: Set the number of iterations of the immune response [Example: 10].',
+                          required=True)
     return parser
