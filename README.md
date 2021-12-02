@@ -16,10 +16,10 @@ for the "winner".
 _________________
 ## Dependencies
 Please install these module versions prior to using CAIN.
-- Python 3.0+
-- Numpy
-- Pandas
-- tqdm
+- Python v.3.0+
+- Numpy v.1.21.4
+- Pandas v.1.3.4
+- tqdm v.4.62.3
 
 ________________
 ## Selection and Response
