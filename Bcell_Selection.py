@@ -50,19 +50,26 @@ class Selection:
         for aa in self.likelihood.keys():
             other_likelihood = dict()
             for row in row_names:
-                col = pam[aa]  # Calls the df column for the amino acid
-                value = col[row]  # Calls the value for the column and row
+
+                # Calls the df column for the amino acid
+                col = pam[aa]
+
+                # Calls the value for the column and row
+                value = col[row]
+
                 other_likelihood[row] = value
             self.likelihood[aa] = other_likelihood
 
+        # Identifies the index - specific match integer
         for key, value in self.selection_dict.items():
             para = value
-            match_number = len(list(filter(lambda xy: xy[0] == xy[1], zip(ant, para))))  # Identifies the
-            # index-specific match integer
+            match_number = len(list(filter(lambda xy: xy[0] == xy[1], zip(ant, para))))
 
+            # Calculate and append fitness value
             fitness = match_number / len(ant)
             value.append(lymphocyte.n)
             value.append(fitness)
+
             # Each population will undergo clonal selection as opposed to each individual because the likelihood of
             # substitution would be the same for each individual in the population.
 
@@ -90,7 +97,8 @@ class Selection:
                     if max1 > 0:
                         q = random.randrange(0, 1)
                         if max1 >= q:
-                            product += k[v.index(max1)]  # Substitutes the original amino acid with the new
+                            # Substitutes the original amino acid with the new
+                            product += k[v.index(max1)]
                         else:
                             product += a
                     else:

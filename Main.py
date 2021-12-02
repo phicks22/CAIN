@@ -2,14 +2,11 @@ import random
 import os
 import numpy as np
 import sys
-import tqdm
 from Ant_Lymph import Antigen, Lymphocyte
 from Bcell_Selection import Selection
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.preprocessing import LabelEncoder
 from numpy import array
-from numpy import argmax
-from tensorflow.keras.utils import to_categorical
 from Arg_Parser import *
 
 args = ant_lymph_parser().parse_args(sys.argv[1:])
@@ -85,11 +82,6 @@ class Main:
                             print("Error: Draw exceeds 0-1 range.")
                         response_time_individual += 1
 
-                # Delete "dead" lymphocyte populations
-                # for key in list(population_dict.keys()):
-                #     n = population_dict.get(key)[1]
-                #     if n <= 0:
-                #         del population_dict[key]
                 response_time_population += 1
 
         return population_dict

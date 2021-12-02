@@ -35,8 +35,11 @@ class Lymphocyte:
         :return Population dictionary of paratopes
 
         """
+        # List of all possible amino acids
         aa_list = ['A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M',
-                   'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'Y']  # List of all possible amino acids
+                   'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'Y']
+
+        # Initialize empty paratope and randomly add amino acids to match the length of the epitope
         paratope = ''
         for i in range(len_epitope):
             paratope += (random.choice(aa_list))
