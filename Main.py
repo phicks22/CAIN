@@ -87,96 +87,95 @@ class Main:
         return population_dict
 
 
-#
-# if __name__ == '__main__':
-#
-#     pop_size = int(args.pop_size)
-#     pop_num = int(args.pop_num)
-#     epitope = args.epitope
-#     ant_div = int(args.division_rate)
-#     exchange_iter = int(args.exchange_iter)
-#     res_time = int(args.response_time)
-#     antigen = Antigen(epitope=epitope, pop_num=1, n=1, division_rate=ant_div)
-#     lymph = Lymphocyte(paratope='', pop_num=pop_num, n=pop_size)
-#
-#     for k in range(0, lymph.pop_num):
-#         paratope = lymph.gen_para(len(antigen.epitope))
-#         lymph.pops[k] = [paratope]
-#
-#     selection = Selection()
-#     print("_________________________________________________________________")
-#
-#     # Run B-cell clonal selection
-#     populations = selection.clonal_selection(exchange_iter=exchange_iter, antigen=antigen,
-#                                              lymphocyte=lymph)
-#     print("_________________________________________________________________")
-#
-#     # Run the immune response for all populations
-#     response = Main()
-#     final_pops = response.immune_response(populations, antigen, response_time=res_time, a_div=ant_div)
-#     print(final_pops)
-#     print("Immune Response Completed")
-#     print("_________________________________________________________________")
+if __name__ == '__main__':
+
+    pop_size = int(args.pop_size)
+    pop_num = int(args.pop_num)
+    epitope = args.epitope
+    ant_div = int(args.division_rate)
+    exchange_iter = int(args.exchange_iter)
+    res_time = int(args.response_time)
+    antigen = Antigen(epitope=epitope, pop_num=1, n=1, division_rate=ant_div)
+    lymph = Lymphocyte(paratope='', pop_num=pop_num, n=pop_size)
+
+    for k in range(0, lymph.pop_num):
+        paratope = lymph.gen_para(len(antigen.epitope))
+        lymph.pops[k] = [paratope]
+
+    selection = Selection()
+    print("_________________________________________________________________")
+
+    # Run B-cell clonal selection
+    populations = selection.clonal_selection(exchange_iter=exchange_iter, antigen=antigen,
+                                             lymphocyte=lymph)
+    print("_________________________________________________________________")
+
+    # Run the immune response for all populations
+    response = Main()
+    final_pops = response.immune_response(populations, antigen, response_time=res_time, a_div=ant_div)
+    print(final_pops)
+    print("Immune Response Completed")
+    print("_________________________________________________________________")
 
 ################### For Large Data Collection ###################
 # Save parameters and output as a list to be One Hot Encoded
-dataset = list()
-paratopes = list()
-selection = Selection()
-epitope = args.epitope
-ant_div = int(args.division_rate)
-
-# Initialize antigen population
-antigen = Antigen(epitope=epitope, pop_num=1, n=1, division_rate=ant_div)
-
-# Iterate through all desired parameter values
-# Population Number
-for i in range(1, 10):
-    # Population size
-    for j in range(1, 10):
-        # Exchange iterations
-        for k in range(10, 11):
-            # Immune response time
-            for h in range(10, 11):
-                # Initialize the lymphocyte populations
-                lymph = Lymphocyte(paratope='', pop_num=i, n=j)
-
-                for p in range(0, lymph.pop_num):
-                    paratope = lymph.gen_para(len(antigen.epitope))
-                    lymph.pops[p] = [paratope]
-                    paratopes.append(paratope)
-
-                # B-cell clonal selection
-                populations = selection.clonal_selection(exchange_iter=k, antigen=antigen,
-                                                         lymphocyte=lymph)
-                #  Immune response
-                response = Main()
-                final_pops = response.immune_response(populations, antigen, response_time=h, a_div=ant_div)
-
-                for key in final_pops.keys():
-                    del (final_pops[key])[0]
-                    final_pops[key].extend([i, j, k, h])
-                # Save parameters and output to dataset list
-                for value in final_pops.values():
-                    dataset.append(value)
-
-values = array(paratopes)
-label_encoder = LabelEncoder()
-integer_encoded = label_encoder.fit_transform(values)
-onehot_encoder = OneHotEncoder(sparse=False)
-integer_encoded = integer_encoded.reshape(len(integer_encoded), 1)
-onehot_encoded = onehot_encoder.fit_transform(integer_encoded)
-
-list_count = 0
-for l in zip(onehot_encoded, dataset):
-    if list_count < (np.array(onehot_encoded)).shape[0]:
-        for entry in onehot_encoded[list_count]:
-            dataset[list_count].append(entry)
-        list_count += 1
-
-final = np.array(dataset)
-
-np.savez(os.path.join(root_dir, "results"), data=final)
-
-file = np.load(os.path.join(root_dir, "results.npz"), allow_pickle=True)
-print(file["data"])
+# dataset = list()
+# paratopes = list()
+# selection = Selection()
+# epitope = args.epitope
+# ant_div = int(args.division_rate)
+#
+# # Initialize antigen population
+# antigen = Antigen(epitope=epitope, pop_num=1, n=1, division_rate=ant_div)
+#
+# # Iterate through all desired parameter values
+# # Population Number
+# for i in range(1, 10):
+#     # Population size
+#     for j in range(1, 10):
+#         # Exchange iterations
+#         for k in range(10, 11):
+#             # Immune response time
+#             for h in range(10, 11):
+#                 # Initialize the lymphocyte populations
+#                 lymph = Lymphocyte(paratope='', pop_num=i, n=j)
+#
+#                 for p in range(0, lymph.pop_num):
+#                     paratope = lymph.gen_para(len(antigen.epitope))
+#                     lymph.pops[p] = [paratope]
+#                     paratopes.append(paratope)
+#
+#                 # B-cell clonal selection
+#                 populations = selection.clonal_selection(exchange_iter=k, antigen=antigen,
+#                                                          lymphocyte=lymph)
+#                 #  Immune response
+#                 response = Main()
+#                 final_pops = response.immune_response(populations, antigen, response_time=h, a_div=ant_div)
+#
+#                 for key in final_pops.keys():
+#                     del (final_pops[key])[0]
+#                     final_pops[key].extend([i, j, k, h])
+#                 # Save parameters and output to dataset list
+#                 for value in final_pops.values():
+#                     dataset.append(value)
+#
+# values = array(paratopes)
+# label_encoder = LabelEncoder()
+# integer_encoded = label_encoder.fit_transform(values)
+# onehot_encoder = OneHotEncoder(sparse=False)
+# integer_encoded = integer_encoded.reshape(len(integer_encoded), 1)
+# onehot_encoded = onehot_encoder.fit_transform(integer_encoded)
+#
+# list_count = 0
+# for l in zip(onehot_encoded, dataset):
+#     if list_count < (np.array(onehot_encoded)).shape[0]:
+#         for entry in onehot_encoded[list_count]:
+#             dataset[list_count].append(entry)
+#         list_count += 1
+#
+# final = np.array(dataset)
+#
+# np.savez(os.path.join(root_dir, "results"), data=final)
+#
+# file = np.load(os.path.join(root_dir, "results.npz"), allow_pickle=True)
+# print(file["data"])
