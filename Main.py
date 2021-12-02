@@ -179,9 +179,12 @@ list_count = 0
 for l in zip(onehot_encoded, dataset):
     if list_count < (np.array(onehot_encoded)).shape[0]:
         for entry in onehot_encoded[list_count]:
-            print(dataset[list_count])
             dataset[list_count].append(entry)
         list_count += 1
 
 final = np.array(dataset)
-print(final.shape)
+
+np.savez(os.path.join(root_dir, "results"), data=final)
+
+file = np.load(os.path.join(root_dir, "results.npz"), allow_pickle=True)
+print(file["data"])

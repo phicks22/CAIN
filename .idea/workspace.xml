@@ -27,9 +27,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d445426-7faa-4ae8-be1a-0c57e9dd020e" name="Default Changelist" comment="Updated">
+    <list default="true" id="6d445426-7faa-4ae8-be1a-0c57e9dd020e" name="Default Changelist" comment="FIXED THE DATASET">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bcell_Selection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bcell_Selection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -480,7 +479,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638376613988</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="FIXED THE DATASET">
+      <created>1638424302290</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1638424302290</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,7 +502,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Reformatted Notes file" />
     <MESSAGE value="Created a test function for ant/lymph object epitope/paratope lengths." />
     <MESSAGE value="Added testing notes in Notes file." />
     <MESSAGE value="Added TODO in Ant_Lymph.py" />
@@ -521,6 +526,7 @@
     <MESSAGE value="Added comments" />
     <MESSAGE value="Added more user-set parameters to the example" />
     <MESSAGE value="Updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated" />
+    <MESSAGE value="FIXED THE DATASET" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIXED THE DATASET" />
   </component>
 </project>
