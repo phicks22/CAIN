@@ -40,3 +40,6 @@ Running `Main.py` initiates the B-cell selection algorithm and immune response s
 
 ________________
 ## Unsupervised Parameter Clustering
+1) To collect your data, uncomment the block section `For Large Data Collection` and set the disired
+ranges of your hyper-parameters. Run the model which will output an .npz file with kwds="data".
+2) Load the data into `Parameter_Clustering.py` and choose the desired clustering method.
