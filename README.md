@@ -4,8 +4,8 @@ _________________
 CAIN simulates B-cell selection and an immune response following the introduction of a 
 foreign pathogenic antigen. This algorithm is only applicable to antigens with linear
 epitope binding sites. B-cell selection occurs via amino acid substitution likelihoods 
-according to the Point Accepted Mutation (PAM) matrix. The PAM250 matrix text file is 
-provided. If you wish to use a different version, please place the file in the Resources 
+according to the Point Accepted Mutation (PAM) matrix. The PAM1 and PAM250 matrices text file are 
+provided. If you wish to use different versions, please place the files in the Resources 
 directory and alter the code chunk in the `Bcell_Selection.py` file.
 
 Following B-cell selection, an immune response is performed using game-theory concepts to
