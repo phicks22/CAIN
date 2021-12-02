@@ -67,8 +67,8 @@ class Selection:
             # substitution would be the same for each individual in the population.
 
         ############# Selection Process #############
-        print("Starting populations: ", self.selection_dict)
-        print("Antigen Epitope: ", ant)
+        # print("Starting populations: ", self.selection_dict)
+        # print("Antigen Epitope: ", ant)
         for i in tqdm(range(0, exchange_iter)):
 
             # Iterate through each population
