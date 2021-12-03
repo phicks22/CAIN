@@ -36,7 +36,7 @@ Next, run the following command in the terminal, setting each argument per the d
 $ python Main.py -e <amino_acid_sequence> -n 100 -d 2 -p 4 -ex 1000 -r 10
 ```
 Required arguments:
-* `-e`: Antigen linear epitope.
+* `-e`: Antigen linear epitope. Example: ARIKDDCGHAI
 * `-n`: Number of individuals in each B-cell population
 * `-d`: Antigen division rate
 * `-p`: Number of B-cell populations
