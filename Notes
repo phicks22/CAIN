@@ -10,6 +10,8 @@ Sections:
     Testing:
         i. Ant_Lymph
         ii. Main
+    Data:
+        i. Collection
 
 Introduction/Objective:
 
@@ -172,3 +174,16 @@ Testing:
         The immune response algorithm provided an error where the lymphocyte populations with n=0 could not be deleted
         due to improper calling of the population_dict dictionary keys. This was fixed.
 
+Data:
+
+    Collection
+
+        211201
+        The simulation was run for all combinations of the following parameters:
+
+            pop_num = [100, 100], step=10
+            pop_size = [1000, 10000], step=100
+            exchange_iter = [100, 1000], step=10
+            response_time = [100, 1000], step=10
+
+        The dataset was stored as a numpy array in an .npz file with *kwds="data"
