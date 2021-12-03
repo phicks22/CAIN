@@ -16,14 +16,21 @@ for the "winner".
 _________________
 ## Dependencies
 Please install these module versions prior to using CAIN.
-- Python v.3.0+
-- Numpy v.1.21.4
-- Pandas v.1.3.4
-- tqdm v.4.62.3
+- Python 3.0+
+- Numpy 1.21.4
+- Pandas 1.3.4
+- tqdm 4.62.3
 
 ________________
+## Installation
+To clone the repository, open the command terminal and set your working directory. Next, run the 
+following command:
+```bash
+$ git clone https://github.com/phicks22/Thesis_Notebook
+```
+________________
 ## Selection and Response
-First: Set your working directory in the `Arg_Parser.py` file at the very top.
+First: Set your root directory in the `Arg_Parser.py` file at the very top.
 Next, run the following command in the terminal, setting each argument per the desired parameters.
 ```bash
 $ python Main.py -e <amino_acid_sequence> -n 100 -d 2 -p 4 -ex 1000 -r 10
