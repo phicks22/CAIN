@@ -114,11 +114,18 @@ if __name__ == '__main__':
     response = Main()
     final_pops = response.immune_response(populations, antigen, response_time=res_time, a_div=ant_div)
     print(final_pops)
+
+    results = list()
+    for value in final_pops.values():
+        results.append(value)
+
+    final = np.array(results)
+    np.savez(os.path.join(root_dir, "results"), data=final)
     print("Immune Response Completed")
     print("_________________________________________________________________")
 
 ################### For Large Data Collection ###################
-# Save parameters and output as a list to be One Hot Encoded
+# # Save parameters and output as a list to be One Hot Encoded
 # dataset = list()
 # paratopes = list()
 # selection = Selection()
@@ -130,13 +137,13 @@ if __name__ == '__main__':
 #
 # # Iterate through all desired parameter values
 # # Population Number
-# for i in range(1, 10):
+# for i in range(100, 1000, 10):
 #     # Population size
-#     for j in range(1, 10):
+#     for j in range(1000, 10000, 100):
 #         # Exchange iterations
-#         for k in range(10, 11):
+#         for k in range(100, 1000, 10):
 #             # Immune response time
-#             for h in range(10, 11):
+#             for h in range(100, 1000, 10):
 #                 # Initialize the lymphocyte populations
 #                 lymph = Lymphocyte(paratope='', pop_num=i, n=j)
 #

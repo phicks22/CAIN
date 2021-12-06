@@ -27,7 +27,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d445426-7faa-4ae8-be1a-0c57e9dd020e" name="Default Changelist" comment="Updated">
+    <list default="true" id="6d445426-7faa-4ae8-be1a-0c57e9dd020e" name="Default Changelist" comment="Updated help for Arg_Parser.py">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -190,34 +191,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1616546375170</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Initial commit">
-      <created>1616547637189</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1616547637189</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Added previous entries to notes">
-      <created>1616549730169</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1616549730169</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Added return to binding function for when there's no probability of binding.">
-      <created>1616551601568</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1616551601568</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Added comments to binding function.">
-      <created>1616552176856</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1616552176856</updated>
     </task>
     <task id="LOCAL-00005" summary="Fixing class properties.">
       <created>1616892249112</created>
@@ -520,7 +493,49 @@
       <option name="project" value="LOCAL" />
       <updated>1638467696317</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Updated">
+      <created>1638468514405</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1638468514405</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Updated">
+      <created>1638468553379</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1638468553379</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Updated">
+      <created>1638560117952</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1638560117954</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Added installation instructions">
+      <created>1638560650123</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1638560650123</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Updated instructions">
+      <created>1638560804682</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1638560804682</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Updated help for Arg_Parser.py">
+      <created>1638810161388</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1638810161389</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -536,9 +551,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added Immune_Response.py" />
-    <MESSAGE value="Removed Immune_Response.py and added immune response function in Main.py" />
-    <MESSAGE value="updated Bcell_Selection.py" />
     <MESSAGE value="Added Arg_Parser.py and updated the Ant_Lymph.py to integrate the arguments." />
     <MESSAGE value="Updated Ant_Lymph.py to implement a dictionary of populations of Lymphocytes" />
     <MESSAGE value="Updated Bcell_Selection.py to calculate substitution likelihoods." />
@@ -561,6 +573,9 @@
     <MESSAGE value="Updated Unsupervised Parameter Clustering section." />
     <MESSAGE value="Updated dependencies" />
     <MESSAGE value="Updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated" />
+    <MESSAGE value="Added installation instructions" />
+    <MESSAGE value="Updated instructions" />
+    <MESSAGE value="Updated help for Arg_Parser.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated help for Arg_Parser.py" />
   </component>
 </project>
