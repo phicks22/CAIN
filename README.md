@@ -23,8 +23,9 @@ Please install these module versions prior to using CAIN.
 
 ________________
 ## Installation
-To clone the repository, open the command terminal and set your working directory. Next, run the 
-following command:
+To clone the repository, open the command terminal and set your working directory.
+
+Next, run the following command:
 ```bash
 $ git clone https://github.com/phicks22/Thesis_Notebook
 ```
