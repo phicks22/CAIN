@@ -130,11 +130,11 @@ if __name__ == '__main__':
     now = datetime.now()
     current_time = now.strftime("__%H%M")
     date = today.strftime("_%y%m%d")
-    cain_file = os.path.join(root_dir, "results.npz")
+    cain_file = os.path.join(root_dir, "results" + date + current_time + ".npz")
     final = np.array(results)
-    np.savez(os.path.join(root_dir, "results"), data=final)
+    np.savez(cain_file, data=final)
     print("Immune Response Completed")
-    print("Saving file", cain_file + date + current_time)
+    print("Saving file", cain_file)
     print("_________________________________________________________________")
 
 ################### For Large Data Collection ###################
