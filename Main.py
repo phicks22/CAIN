@@ -128,8 +128,8 @@ if __name__ == '__main__':
 
     today = date.today()
     now = datetime.now()
-    current_time = now.strftime("--%H-%M")
-    date = today.strftime("_%m-%d-%y")
+    current_time = now.strftime("__%H%M")
+    date = today.strftime("_%y%m%d")
     cain_file = os.path.join(root_dir, "results.npz")
     final = np.array(results)
     np.savez(os.path.join(root_dir, "results"), data=final)
