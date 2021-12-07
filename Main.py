@@ -2,12 +2,14 @@ import random
 import os
 import numpy as np
 import sys
+import time
 from Ant_Lymph import Antigen, Lymphocyte
 from Bcell_Selection import Selection
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.preprocessing import LabelEncoder
 from numpy import array
 from Arg_Parser import *
+from datetime import date, datetime
 
 args = ant_lymph_parser().parse_args(sys.argv[1:])
 
@@ -113,15 +115,26 @@ if __name__ == '__main__':
     # Run the immune response for all populations
     response = Main()
     final_pops = response.immune_response(populations, antigen, response_time=res_time, a_div=ant_div)
-    print(final_pops)
+    survived = list()
+    for v in final_pops.values():
+        if v[1] >= 1:
+            survived.append(v)
+
+    print("Surviving Populations: ", survived)
 
     results = list()
     for value in final_pops.values():
         results.append(value)
 
+    today = date.today()
+    now = datetime.now()
+    current_time = now.strftime("--%H-%M")
+    date = today.strftime("_%m-%d-%y")
+    cain_file = os.path.join(root_dir, "results.npz")
     final = np.array(results)
     np.savez(os.path.join(root_dir, "results"), data=final)
     print("Immune Response Completed")
+    print("Saving file", cain_file + date + current_time)
     print("_________________________________________________________________")
 
 ################### For Large Data Collection ###################

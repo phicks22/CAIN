@@ -27,7 +27,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d445426-7faa-4ae8-be1a-0c57e9dd020e" name="Default Changelist" comment="Updated help for Arg_Parser.py">
+    <list default="true" id="6d445426-7faa-4ae8-be1a-0c57e9dd020e" name="Default Changelist" comment="Updated to save the final populations as an .npz file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
     </list>
@@ -191,13 +191,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1616546375170</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Fixing class properties.">
-      <created>1616892249112</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1616892249112</updated>
     </task>
     <task id="LOCAL-00006" summary="Fixed paratope issue by calling the Ant_Lymph.py classes in Main.py">
       <created>1616893525844</created>
@@ -535,7 +528,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638810161389</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Updated to save the final populations as an .npz file">
+      <created>1638810609237</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1638810609237</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -551,7 +551,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added Arg_Parser.py and updated the Ant_Lymph.py to integrate the arguments." />
     <MESSAGE value="Updated Ant_Lymph.py to implement a dictionary of populations of Lymphocytes" />
     <MESSAGE value="Updated Bcell_Selection.py to calculate substitution likelihoods." />
     <MESSAGE value="Added comments to clonal_selection function in Bcell_Selection.py" />
@@ -576,6 +575,7 @@
     <MESSAGE value="Added installation instructions" />
     <MESSAGE value="Updated instructions" />
     <MESSAGE value="Updated help for Arg_Parser.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated help for Arg_Parser.py" />
+    <MESSAGE value="Updated to save the final populations as an .npz file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated to save the final populations as an .npz file" />
   </component>
 </project>
