@@ -27,7 +27,7 @@ To clone the repository, open the command terminal and set your working director
 
 Next, run the following command:
 ```bash
-$ git clone https://github.com/phicks22/Thesis_Notebook
+$ git clone https://github.com/phicks22/CAIN
 ```
 ________________
 ## Selection and Response
